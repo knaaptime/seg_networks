@@ -1,0 +1,27 @@
+name: seg_networks
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.9
+  - jupyter                         # required to run notebooks
+  - jupyterlab                      # required to run notebooks
+  - pandas >=1.0                    # generate markdown tables
+  - tabulate                        # generate markdown tables
+  - pandoc >=2.12                   # required to compile the paper
+ # - pandoc-crossref >=0.3.10       # required to compile the paper
+  - tectonic                        # required to compile the paper
+  - watermark                       # add metadata to notebooks
+  - seaborn                         # requirement of stargazer and we want from conda not pip
+  - gh
+  - segregation >= 2.3.1
+  - geosnap >=0.10
+  - osmnx
+  - statsmodels
+  - scikit-learn
+  - pip
+  - pip:
+    - pandoc-include                 # necessary to compile the paper
+    - pandoc-latex-admonition        # necessary to compile the paper
+    - stargazer
+    - -e .

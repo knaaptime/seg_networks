@@ -1,0 +1,16 @@
+codeBlockCaptions: True
+listings: True
+figPrefix: 
+ - "Figure"
+ - "Figures"
+figureTitle: "Figure "
+lstPrefix:
+ - "Listing"
+ - "Listings"
+tblPrefix:
+ - "Table"
+ - "Tables"
+eqnPrefix:
+ - "Equation"
+ - "Equations"
+tableTemplate: "*$$tableTitle$$ $$i$$*$$titleDelim$$ $$t$$"
