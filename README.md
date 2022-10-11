@@ -11,6 +11,13 @@ It examines three questions:
    - where 
 3. what characteristics of the pedestrian network explain the observed difference in measurement?
 
+## To Do
+
+- [ ] attach census data to street network, then drop nodes with NA values and recalculate euclidean segregation on this surface
+  - this ensures its 1:1 because otherwise we shift the observations slightly to align with network-based measures
+- [ ] make sure the new decay methods in segregation match the [logic from pandana](https://github.com/UDST/pandana/blob/3e3d35ca2d57428714b89ed8fc7020bc55067e1d/src/accessibility.cpp#L391)
+- [ ] add graph measures [from momepy](http://docs.momepy.org/en/stable/api.html#graph)
+
 ## Set up
 
 **The conda environment contains _all_ necessary dependencies**

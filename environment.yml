@@ -17,6 +17,7 @@ dependencies:
   - segregation >= 2.3.1
   - geosnap >=0.10
   - osmnx
+  - pysal  
   - statsmodels
   - scikit-learn
   - pip
