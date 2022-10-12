@@ -15,8 +15,8 @@ this project examines the relationship between pedestrian network characteristic
 It examines three questions:
 
 1. How large is the difference between euclidean-based and network-based measures of spatial segregation?
-   1. how often
-   2. where?
+   - how often
+   - where?
 2. Are the differences between euclidean and network measures significantly different from random realizations of the same data?
    - how often
    - where 
@@ -34,9 +34,10 @@ classics:
 - econ and regional science use distance from the city center
     - ultimately about transport of goods (von thunen was based on an *agricultural economy* and moving crops from the ag hinterlands into the marketplace where people actually lived). 
     - Transport connectivity is implicit, but models are high-level in the 1950s, and the abstraction works conceptually. Neither the theory or computational power exist yet to examine the role of better measurements of $W_{ij}$
+
 recents:
 - GIS, geography, and spatial econometrics concepts of spatial weights
-- multiscale and/or bespoke neighborhoods in geography and sociology (Hipp, van Ham, )
+- multiscale and/or bespoke neighborhoods in geography and sociology (@HIPP_2013, van Ham, )
 - street networks in empirical work
     - grannis shows social interactions are more frequent inside T-communities defined by street networks
     - Roberto uses street networks to measure segregation in a small-scale case study.
