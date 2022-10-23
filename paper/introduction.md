@@ -5,8 +5,9 @@ proxy measure for geographic proximity (which is, itself, often a proxy for the 
 interaction). It's the geographic equivalent of
 [the spherical cow](https://en.wikipedia.org/wiki/Spherical_cow), save that scientists of many
 different disciplines often fail to realize how simplified it is. While, in general, simple
-proximity is a reasonable heuristic for understanding Tobler's Law, the behavioral realities of
-movement and social interaction in complex urban environments often require a more thoughtful model.
+proximity is a reasonable heuristic for understanding Tobler's Law [@tobler1970ComputerMovie], the
+behavioral realities of movement and social interaction in complex urban environments often require
+a more thoughtful model.
 
 
 <!-- Question -->

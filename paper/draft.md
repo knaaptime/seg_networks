@@ -13,13 +13,16 @@ abstract: >-
 keywords: "segregation, neighborhoods, spatial analysis, network analysis, spatial weights" 
 bibliography: "paper-seg_networks.bib"
 crossrefYaml: .pandoc/crossref_opts.yaml
-csl: .pandoc/csl/apa-custom.csl # apa without name disambiguation # these do not work for fancy_article
-sansitup: True
+csl: .pandoc/csl/apa-custom.csl # apa without name disambiguation 
 linestretch: 1.4 # for fancy_article use 1.25
 geometry: margin=1in
 fontsize: 10pt # for fancy_article use 11
-thanks: "This work is supported by NSF Grant XXXXXX"
+# these do not work for fancy_article
+sansitup: True
+thanks: "This work is supported by NSF-SES Grant 1831615"
 anonymous: False
+header-includes: |
+  \usepackage{mathtools} 
 ---
 
 
@@ -31,6 +34,31 @@ anonymous: False
 
 !include background.md
 
+# The Role of Network Distance in Segregation Measurement
+
+<!-- describe segregation measures and inference framewrok -->
+!include methods_segregation.md
+
+<!-- we show that network distance matters -->
+!include results_difference.md
+
+# Network Characteristics and Segregation Differences
+
+<!-- treating the transport system as a network graph -->
+
+!include methods_graphs.md
+
+<!-- model association between network topology and segregation differences -->
+
+!include results_graphs.md
+
+# Discussion
+
+!include discussion.md
+
+# Conclusion
+
+!include conclusion.md
 
 # References
 
