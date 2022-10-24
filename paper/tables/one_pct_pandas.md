@@ -1,7 +1,7 @@
 \begin{table}
 \centering
 \caption{CBSAs with Highly Significant $\Delta_{\tilde{H}}$}
-\label{one_pct_diffs}
+\label{tbl:one_pct_diffs}
 \begin{tabular}{lrrrrr}
 \toprule
 {} &  $\tilde{H}_{net}$ &  $\tilde{H}_{euc}$ &  $\Delta_{\tilde{H}}$ &  $\Delta_{pct}$ &  pseudo-$p$ \\

@@ -2,14 +2,14 @@
 
 An exceedingly common abstraction in applied spatial analysis is the use of euclidean distance as a
 proxy measure for geographic proximity (which is, itself, often a proxy for the frequency of social
-interaction). It is the geographical science equivalent of physics' spherical cow[^spherical_cow],
-or the economists' perfect market: a useful abstraction that helps partially explain a much more
-complex underlying process, however imperfectly. A major difference in spatial analysis, however, is
-that scientists from many disciplines often fail to realize how simplified the assumption of
-euclidean distance is when traversing the built or natural environment. While, in general, simple
-proximity is a reasonable heuristic for understanding Tobler's Law [@tobler1970ComputerMovie], the
-behavioral realities of movement and social interaction in complex urban environments often require
-a more thoughtful model.
+interaction). It is the geographical science equivalent of the physicist's spherical
+cow[^spherical_cow], or the economist's perfect market: a useful abstraction that helps partially
+explain a much more complex underlying process, however imperfectly. A major difference in spatial
+analysis, however, is that scientists from many disciplines often fail to realize how simplified the
+assumption of euclidean distance is when traversing the built or natural environment. While, in
+general, simple proximity is a reasonable heuristic for understanding Tobler's Law
+[@tobler1970ComputerMovie], the behavioral realities of movement and social interaction in complex
+urban environments often require a more thoughtful model.
 
 More directly, cities, regions, and neighborhoods are not featureless planes in which agents have
 perfect freedom of mobility. Rather, they are multifaceted environments populated by highways,
