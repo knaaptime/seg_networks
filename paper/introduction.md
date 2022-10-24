@@ -2,7 +2,7 @@
 
 An exceedingly common abstraction in applied spatial analysis is the use of euclidean distance as a
 proxy measure for geographic proximity (which is, itself, often a proxy for the frequency of social
-interaction). It is the geographical science equivalent of physics' spherical cow [^spherical_cow],
+interaction). It is the geographical science equivalent of physics' spherical cow[^spherical_cow],
 or the economists' perfect market: a useful abstraction that helps partially explain a much more
 complex underlying process, however imperfectly. A major difference in spatial analysis, however, is
 that scientists from many disciplines often fail to realize how simplified the assumption of
