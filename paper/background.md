@@ -60,7 +60,7 @@ how much easier they appear to be reached via the circular buffer).
 Recent work by @roberto2018SpatialProximity shows the importance of considering network distances
 when measuring segregation using both simulated data and an empirical example in Pittsburgh, PA.
 That study shows that segregation is consistently higher at all spatial scales when the measure
-accounts for local network connectivity. As @roberto2018SpatialProximity [p. 28] notes , "even small
+accounts for local network connectivity. As @roberto2018SpatialProximity [p. 28] notes, "even small
 positive differences in the city-level results are meaningful and suggest that physical barriers
 facilitate greater separation between ethnoracial groups and higher levels of segregation." We agree
 with this assessment and in what follows, we examine the magnitude of differences between network
@@ -69,6 +69,6 @@ Specifically, we expand upon prior work in three different directions. First, we
 geographic scope by considering every metropolitan region in the United States, rather than a case
 study of a single city. Second, we adopt a computational inference framework that allows us to
 assess whether the observed differences between the segregation measures are large enough that they
-could not happen by change. Finally, we explore the relationship between differences in observed
+could not happen by chance. Finally, we explore the relationship between differences in observed
 segregation and characteristics of the local travel network.
 
