@@ -120,22 +120,31 @@ $\tilde{H}_{diff}$.
 
 ### Inferential Framework
 
-We assess the importance of considering network distance in segregation measurement by adopting the
-inferential framework outlined in @cortes2020OpensourceFramework. The approach leverages a
-computational approach to statistical inference using random labelling to compare the observed
-difference between the two segregation measures (network versus euclidean) to a distribution of
-differences generated from the same data. More specifically, the measures $\tilde{H}_{net}$,
-$\tilde{H}_{euc}$ and $\tilde{H}_{diff}$ are computed and recorded for each metro region. As a
-result of this process, two "spatialized" versions of the metropolitan demographic composition are
-created, with one dataset representing euclidean distances and the other representing network-based
-distances.
+We assess the importance of considering network distance in
+segregation measurement by adopting the inferential framework outlined
+in @rey2021ComparativeSpatial and @cortes2020OpensourceFramework. The
+approach leverages a computational approach to statistical inference
+using random labelling to compare the observed difference between the
+two segregation measures (network versus euclidean) to a distribution
+of differences generated from the same data. More specifically, the
+measures $\tilde{H}_{net}$, $\tilde{H}_{euc}$ and $\tilde{H}_{diff}$
+are computed and recorded for each metro region. As a result of this
+process, two "spatialized" versions of the metropolitan demographic
+composition are created, with one dataset representing euclidean
+distances and the other representing network-based distances.
 
-We then create two synthetic datasets by pooling the input units from both original datasets and
-reassigning them at random. Once all units have been assigned to a group, the segregation measures
-are re-computed and their difference taken. This process is repeated 10,000 iterations. By comparing
-the observed difference between the two segregation measures against a distribution of differences
-generated via synthetic datasets, we can develop pseudo p-values based on a standard T-test. Our
-test in this case measures the empirical likelihood of obtaining the observed difference at random
-under the null hypothesis that no difference exists between the two measurements. The pseudo-$p$
-values represent the share of simulations in which the simulated difference was greater than the
-observed difference $\tilde{H}_{diff}$.
+We then create two synthetic datasets by pooling the input units from
+both original datasets and reassigning them at random. For each
+block-group, we randomly reassign the labels $(net,euc)$ to the
+observed spatial lags from equation [@eq:lag].  Once all units have
+been assigned to a group, the segregation measures are re-computed and
+their difference taken. This process is repeated 10,000 iterations. By
+comparing the observed difference between the two segregation measures
+against a distribution of differences generated via synthetic
+datasets, we can develop pseudo p-values based on a standard
+T-test. Our test in this case measures the empirical likelihood of
+obtaining the observed difference at random under the null hypothesis
+that no difference exists between the two measurements. The pseudo-$p$
+values represent the share of simulations in which the simulated
+difference was greater than the observed difference
+$\tilde{H}_{diff}$.
