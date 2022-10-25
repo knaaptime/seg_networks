@@ -2,7 +2,7 @@
 
 An exceedingly common abstraction in applied spatial analysis is the use of euclidean distance as a
 proxy measure for geographic proximity (which is, itself, often a proxy for the frequency of social
-interaction). It is the geographical science equivalent of the physicist's spherical
+interaction). It is the geographical scientist's equivalent to the physicist's spherical
 cow[^spherical_cow], or the economist's perfect market: a useful abstraction that helps partially
 explain a much more complex underlying process, however imperfectly. A major difference in spatial
 analysis, however, is that scientists from many disciplines often fail to realize how simplified the
@@ -13,12 +13,12 @@ urban environments often require a more thoughtful model.
 
 More directly, cities, regions, and neighborhoods are not featureless planes in which agents have
 perfect freedom of mobility. Rather, they are multifaceted environments populated by highways,
-canyons, rivers, mountains, railroad tracks, alleyways, and power plants. To facilitate movement in this
-environment, an interleaved transportation system provides passageways through discrete locations,
-and conditions how easy it is to move throughout the region and interact with individuals in other
-parts of the region. Although pure euclidean distance can proxy this system, the urban design
-decisions that govern how and where networks are located, as well as the natural features like
-elevation or water features play an important albeit underexamined role in mediating social
+canyons, rivers, mountains, railroad tracks, alleyways, and power plants. To facilitate movement in
+this environment, an interleaved transportation system provides passageways through discrete
+locations, and conditions how easy it is to move throughout the region and interact with individuals
+in other parts of the region. Although pure euclidean distance can proxy this system, the urban
+design decisions that govern how and where networks are located, as well as the natural features
+like elevation or water features play an important albeit underexamined role in mediating social
 interactions.
 
 One particular topic where a full understanding of space would provide significant benefits is
@@ -36,16 +36,16 @@ network.
 
 <!-- Question -->
 
-In this project, we examine the relationship between pedestrian network characteristics and the
-measurement of metropolitan segregation. In doing so, the paper examines three research questions,
-in turn: First, how much does the operationalization of space matter for segregation measurement?
-More specifically, how large is the difference between euclidean-based and network-based measures of
+In this paper, we examine the relationship between pedestrian network characteristics and the
+measurement of metropolitan segregation. In doing so, we examine three research questions in turn:
+first, how much does the operationalization of space matter for segregation measurement? More
+specifically, how large is the difference between euclidean-based and network-based measures of
 spatial segregation? Second, if reasonable differences exist between euclidean and network measures,
 are they large enough that they cannot be attributed to chance? Third, what characteristics of the
-pedestrian network explain the observed difference in measurement? If there is a large and/or
-systematic difference between traditional spatial measurements and those leveraging more realistic
-measurements of distance, then there may be much to learn about the contribution of network
-structure and design when seeking to reduce segregation in cities.
+travel network explain the observed difference in measurement? If there is a large and/or systematic
+difference between traditional spatial measurements and those leveraging more realistic measurements
+of distance, then there may be much to learn about the contribution of network structure and design
+when seeking to maximize urban integration.
 
 <!-- Antecedents -->
 
@@ -65,14 +65,14 @@ how do we represent space in social science research?
 
 
 classics:
-- sociology uses groups. Neighborhoods or cities are discrete containers that condition social behaviors (Park, Burgess, McKenzie)
+- sociology uses groups. Neighborhoods or cities are discrete containers that condition social behaviors (Park, Burgess, McKenzie) [@burgess1928ResidentialSegregation;@Park1925]
 - econ and regional science use distance from the city center
-    - ultimately about transport of goods (von thunen was based on an *agricultural economy* and moving crops from the ag hinterlands into the marketplace where people actually lived). 
+    - ultimately about transport of goods (von thunen was based on an *agricultural economy* and moving crops from the ag hinterlands into the marketplace where people actually lived [@von_thunen_isolierte_1826;@ullman1941TheoryLocation;@sinclair1967ThunenUrban]). 
     - Transport connectivity is implicit, but models are high-level in the 1950s, and the abstraction works conceptually. Neither the theory or computational power exist yet to examine the role of better measurements of $W_{ij}$
 
 recents:
 - GIS, geography, and spatial econometrics concepts of spatial weights
-- multiscale and/or bespoke neighborhoods in geography and sociology (@HIPP_2013, van Ham, )
+- multiscale and/or bespoke neighborhoods in geography and sociology [@hipp2013EgohoodsWaves;@petrovic2019FreedomTyranny;@petrovic2018MultiscaleMeasures]
 - street networks in empirical work
     - grannis shows social interactions are more frequent inside T-communities defined by street networks
     - Roberto uses street networks to measure segregation in a small-scale case study.

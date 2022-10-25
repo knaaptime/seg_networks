@@ -1,5 +1,5 @@
 We begin our analysis by computing two sets of segregation indices, adopting the spatial information
-theory statistic $\tilde{H}$ as our measure of segregation. As @reardon2008GeographicScale [p. 512]
+theory index $\tilde{H}$ as our measure of segregation. As @reardon2008GeographicScale [p. 512]
 describe, "the index $\tilde{H}$ is a measure of how much less diverse individuals’ local
 environments are, on average, than is the total population of region", and reaches its maximum of 1
 only when "each individual's local environment is monoracial". Here, our goal is to test how
