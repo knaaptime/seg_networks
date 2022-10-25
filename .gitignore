@@ -1,4 +1,5 @@
 
+paper/compiled/*
 data/graphs/*
 notebooks/cache/*
 
