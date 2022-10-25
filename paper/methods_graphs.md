@@ -15,8 +15,8 @@ OpenStreetMap.
 
 ## Graph Topology and Segregation Differences
 
-To understand how urban design decisions such as the topology of the travel network may impact the
-ability for residents to interact (as measured by the segregation index), we regress the difference
-in measured segregation on measures of the network graph structure.
-
-<!-- the only change between input is the distance metric, so associations could have a causal interpretation? is that worth it? -->
+To understand how urban design decisions such as the topology of the
+travel network may impact the ability for residents to interact (as
+measured by the segregation index), we begin with an exploration of
+the correlates of the differences in these segregation measures and
+network structure.

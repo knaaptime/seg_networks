@@ -1,8 +1,12 @@
 ## Network Distance is an Important Consideration
 
+![Segregation based on planar and network distances by CBSA. The 45-degree line of equality is shown as dashed. ](figures/scatter.png){#fig:scatter width=40%}
+
+@fig:scatter portrays the relationship between segregation measured using the two different distance metrics for the sample CBSAs.
 Although the correlation between planar and network based segregation measures is $\rho=0.987$, our
 results provide clear evidence that the choice of appropriate distance metric plays an important
-role in the computation of a spatial segregation index. In all but four cases, we show that
+role in the computation of a spatial segregation index. 
+In all but four cases, 
 segregation is higher when measured according to network distance than by pure euclidean
 distance[^CRS] (none of the four cases are significant different from a random pooling of the same
 data). Among the 380 CBAs in our dataset, 25.3% have a difference between euclidean and
