@@ -2,7 +2,7 @@
 Classically, space is treated as a discrete concept, by membership in a group (i.e. a school,
 classroom, neighborhood, or city), where any of these groupings is defined exogenously.
 
-## The Role of Space in Segregation Measurement
+## Measuring Spatial Relationships in Segregation Analysis
 
 ### Making Space Explicit
 
@@ -25,7 +25,7 @@ classroom, neighborhood, or city), where any of these groupings is defined exoge
 @clark2015MultiscalarAnalysis
 
 
-## Homogenous Communities and Urban Design
+## Transportation and Social Interaction
 
 A long-recognized but understudied element of metropolitan segregation patterns is the role of
 transport networks, physical barriers, and other factors such as elevation or congestion that change

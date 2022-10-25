@@ -14,7 +14,7 @@ that distance be measured along a pedestrian transport network.
 Following @reardon2004MeasuresSpatial we consider a spatial region $R$ populated by $M$ racial
 groups indexed by $m$, with $\tau$ and $\pi$ as population density and proportion, respectively.
 Here we diverge from the classical notation in the segregation literature and instead adopt
-conventions more common in spatial econometrics and geographic analysis. Doing so allows us to
+conventions more common in spatial econometrics and geographic analysis[^grannis]. Doing so allows us to
 strengthen the connection between similar concepts in different disciplines as well as gain finer
 control over the definition of spatial relationships. Since many spatial segregation measures are
 implemented in GIS and spatial analysis software designed by geographers, clarifying this connection
@@ -158,3 +158,7 @@ simulated difference was greater than the observed difference $\Delta_{\tilde{H}
 [^null]: Note this does not explicitly require the null $\Delta_{\tilde{H}}=0$. Instead the "null
 value" is the mean of the simulated parameter distribution.
 
+[^grannis]: Notably, however, a similar notation is used by @grannis2002DiscussionSegregation who
+defines the spatial weights matrix as $C$, in recognition of the common specification as a
+connectivity matrix. The author also acknowledges clearly (p. 77), that other functions such as
+inverse-distance weighting are also appropriate.
