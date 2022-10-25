@@ -4,7 +4,7 @@ The travel infrastructure in a metropolitan region serves as its skeleton for bo
 and social interactions. For decades, scholars have worked to quantify the aspects of urban form
 that help explain behaviors such as travel mode choice [@crane2000InfluenceUrban;@clifton2008QuantitativeAnalysis;@ewing2009MeasuringUnmeasurable@ewing2010TravelBuilt]. A recent evolution of
 this work is the conception of a travel network as a formal graph structure
-[@boeing2018PlanarityStreet;@boeing2018MorphologyCircuity;@fleischmann2021MethodologicalFoundation;@fleischmann2018MeasuringUrban],
+[@boeing2018PlanarityStreet;@boeing2018MorphologyCircuity;@fleischmann2021MethodologicalFoundation;@fleischmann2018MeasuringUrban;@araldi2019StreetMetropolitan;@dibble2019OriginSpaces],
 and a set of software tools that facilitate its analysis
 [@boeing2016OSMnxNew;@fleischmann2019MomepyUrban].
 
