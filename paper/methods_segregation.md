@@ -132,10 +132,9 @@ $\Delta_{\tilde{H}} = \tilde{H}_{net} - \tilde{H}_{euc}$. The relative differenc
 
 
 ### Inferential Framework
-
 We assess the importance of considering network distance in segregation measurement by adopting the
 inferential framework outlined in @rey2021ComparativeSpatial and @cortes2020OpensourceFramework. The
-approach leverages a computational approach to statistical inference using random labelling to
+framework leverages a computational approach to statistical inference using random labelling to
 compare the observed difference between the two segregation measures (network versus euclidean) to a
 distribution of differences generated from the same data. More specifically, the measures
 $\tilde{H}_{net}$, $\tilde{H}_{euc}$ and $\Delta_{\tilde{H}}$ are computed and recorded for each metro
@@ -155,5 +154,7 @@ differences[^null]. The pseudo-$p$ values represent probability of obtaining res
 simulated difference was greater than the observed difference $\Delta_{\tilde{H}}$.
 
 
+<!-- I think for random labeling the null is that the difference is 0. Not sure I understand the footnote? -->
 [^null]: Note this does not explicitly require the null $\Delta_{\tilde{H}}=0$. Instead the "null
 value" is the mean of the simulated parameter distribution.
+
