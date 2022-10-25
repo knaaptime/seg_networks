@@ -76,7 +76,7 @@ pdf:
 
 ## Remove old versions of compiled draft
 clean:
-	rm -f paper/compiled/*.html paper/compiled/*.pdf paper/compiled/*.tex;
+	rm -f paper/compiled/*.html paper/compiled/*.pdf paper/compiled/*.tex paper/compiled/*.docx;
 
 ## Run notebooks
 notebooks:
