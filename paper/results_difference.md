@@ -1,6 +1,12 @@
 ## Network Distance is an Important Consideration
 
-![Segregation based on planar and network distances by CBSA. The 45-degree line of equality is shown as dashed. ](figures/scatter.png){#fig:scatter width=40%}
+<div id=fig:net_vs_euc>
+![Segregation based on planar and network distances by CBSA. The 45-degree line of equality is shown as dashed. ](figures/scatter.png){#fig:scatter width=50%}
+![Histogram of % Differences in Segregation Measures](figures/diff_hist.png){#fig:diff_hists width=50%}
+
+Network vs. Eudlidean-based Segregation Indices
+</div>
+
 
 @fig:scatter portrays the relationship between segregation measured using the two different distance metrics for the sample CBSAs.
 Although the correlation between planar and network based segregation measures is $\rho=0.987$, our
@@ -16,7 +22,6 @@ segregation measures in each metro are shown in @tbl:diff_descriptives, and a li
 significant at the one percent level are listed in @tbl:one_pct_diffs. Among these 54 CBAS, eight
 metros are located in California--twice the number of the next-most prevalent state (Texas)
 
-![Histogram of % Differences in Segregation Measures](figures/diff_hist.png){#fig:diff_hists width=40%}
 
 !include tables/difference_descriptives_pandas.md
 

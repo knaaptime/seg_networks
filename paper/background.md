@@ -78,16 +78,16 @@ parts of the urban system such as racial steering by lenders or agents can (and 
 these barriers to create segregated real estate markets and phenomena such as one group living on
 the "other side of the tracks" [@roberto2018SpatialProximity].
 
-Further, we would clarify that, as @fig:network_distance shows, it is not simply the presence of
-physical barriers, but also the geometric design and topological structure of the travel network
-that facilitates separation between people in urban space. The curvilinear, meandering streets and
-abundance of cul-de-sacs in San Clemente stand in sharp contrast to the dense, regular grid in
-Chicago, even though the network in Chicago also includes additional barriers like highways. In what
-follows, we examine the magnitude of differences between network and simple euclidean measures in
-detail for every metropolitan region in the United States. Specifically, we expand upon prior work
-in three different directions. First, we expand the geographic scope by considering every
-metropolitan region in the United States, rather than a case study of a single city. Second, we
-adopt a computational inference framework that allows us to assess whether the observed differences
-between the segregation measures are large enough that they could not happen by chance. Finally, we
-explore the relationship between differences in observed segregation and characteristics of the
-local travel network.
+Further, as @fig:network_distance shows, it is not simply the presence of physical barriers, but
+also the geometric design and topological structure of the travel network that facilitates
+separation between people in urban space. The curvilinear, meandering streets and abundance of
+cul-de-sacs in San Clemente stand in sharp contrast to the dense, regular grid in Chicago, even
+though the network in Chicago also includes additional barriers like highways. In what follows, we
+examine the magnitude of differences between network and simple euclidean measures in detail for
+every metropolitan region in the United States. Specifically, we expand upon prior work in three
+different directions. First, we expand the geographic scope by considering every metropolitan region
+in the United States, rather than a case study of a single city. Second, we adopt a computational
+inference framework that allows us to assess whether the observed differences between the
+segregation measures are large enough that they could not happen by chance. Finally, we explore the
+relationship between differences in observed segregation and characteristics of the local travel
+network.

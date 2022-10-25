@@ -28,3 +28,5 @@ provides a technique for blending multiple graphs together, one spatial and one 
 similar methods could be possibly used to integrate multiple contexts. Work along these lines would
 also help address the call by @reardon2004MeasuresSpatial [p. 156] for metrics that help understand
 bridges across social networks
+
+>It remains for spatial analysts to carefully specify spatial weights matrices so that they truly represent the phenomena being analyzed.[@getis2009SpatialWeights, p.409]
