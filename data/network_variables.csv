@@ -1,0 +1,18 @@
+﻿variable,category,description
+streets_per_node_avg,edge,average streets per node
+street_length_total,edge,total length (meters) of streets in graph
+street_segment_count,edge,count of street segments in graph
+street_length_avg,edge,mean street length
+street_density_km,edge,street density (per km)
+self_loop_proportion,edge,A self-loop is defined as an edge from node u to node v where u==v.
+circuity_avg,edge,Sum of edge lengths divided by the sum of straight-line distances between edge endpoints
+k_avg,node,average node degree
+intersection_count,node,total nodes/intersections
+intersection_density_km,node,nodes/intersections per km
+node_props_dead_end,node,proportion of nodes ending in dead end
+node_props_3way,node,proprotion of 3-way intersections
+node_props_4way,node,proportion of 4-way intersections
+cyclomatic,network,\alpha=e-v+1
+meshedness,network,\alpha=\frac{e-v+1}{2 v-5}
+edge_node_ratio,network,m / k
+gamma,network,\alpha=\frac{e}{3(v-2)}
