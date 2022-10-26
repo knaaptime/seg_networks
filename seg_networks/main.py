@@ -1,9 +1,10 @@
+import momepy
+import networkx as nx
+import numpy as np
 import osmnx as ox
 import pandas as pd
 from geosnap import DataStore
 from geosnap.io import get_acs
-import numpy as np
-import networkx as nx
 
 
 def generate_network_measures(msa, graph_dir="graphs", metrics_dir="metrics"):
@@ -62,4 +63,18 @@ def calculate_network_stats(
 
     if save:
         df.to_csv(f"../data/{metrics_dir}/{msa}_measures.csv")
+    return df
+
+
+def generate_momepy_metrics(geoid):
+
+    g = ox.io.load_graphml(f"../data/graphs/{geoid}_graph.graphml")
+
+    r = dict(
+        cyclomatic=momepy.cyclomatic(g, radius=None),
+        meshedness=momepy.meshedness(g, radius=None),
+        gamma=momepy.gamma(g, radius=None),
+    )
+
+    df = pd.DataFrame.from_dict(r, orient="index", columns=[str(geoid)]).T
     return df
