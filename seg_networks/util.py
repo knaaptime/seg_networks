@@ -87,3 +87,13 @@ def resize_table_cols(df, length):
     for i in length:
         df[i] = df[i].apply(lambda x: break_string(x, length[i]))
     return df
+
+
+def print_results_to_file(model, output_path):
+
+    original_stdout = sys.stdout # Save a reference to the original standard output
+
+    with open(output_path, 'w') as f:
+        sys.stdout = f # Change the standard output to the file we created.
+        print(model.summary2().as_latex())
+        sys.stdout = original_stdout # Reset the standard output to its original value

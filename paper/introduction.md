@@ -84,21 +84,22 @@ economists and location theorists combined them with concepts from @von_thunen_i
 from the city center to explain the arrangement of jobs and housing as well as the transport of
 goods from outlying agricultural areas to markets at the urban core
 [@ullman1941TheoryLocation;@sinclair1967ThunenUrban], culminating in the famous monocentric city
-model [@]. The monocentric model signals a change in the representation of *space* from a discrete
-concept to a continuous one, and given the focus on urban economic processes such as weight loss and
-weight gain, transport connectivity is implicit in these early concepts, but additional
-considerations such as highway throughput or shipping lanes are considered in early economic models
-because neither the data nor computational power existed to dig deeper.
+model [@alonso1964LocationLand;@mills1967AggregativeModel;@muth1969CitiesHousing]. 
 
 <!-- Value-Added -->
 
-In recent decades, that pattern has changed dramatically. Given the rapid adoption of technologies
-like GIS, combined with exploding data resources, statistical literacy, and computational power, a
-wide variety of social scientists are exploring more realistic methods for incorporating spatial
-relationships into their analyses. In fields like quantitative geography and spatial econometrics,
-this trend is revealed by the increasing focus on spatial weights matrices that represent space in
-formal models, and in sociology and human geography, the trend in segregation research is
-increasingly sophisticated concepts of the local neighborhood experienced by each resident. 
+The monocentric model signals a change in the representation of *space* from a discrete concept to a
+continuous one, and given the focus on urban economic processes such as weight loss and weight gain,
+transport connectivity is implicit in these early concepts, but additional considerations such as
+highway throughput or shipping lanes are not considered in early economic models because neither the
+data nor computational power existed to dig deeper. In recent decades, that pattern has changed
+dramatically. Given the rapid adoption of technologies like GIS, combined with exploding data
+resources, statistical literacy, and computational power, a wide variety of social scientists are
+exploring more realistic methods for incorporating spatial relationships into their analyses. In
+fields like quantitative geography and spatial econometrics, this trend is revealed by the
+increasing focus on spatial weights matrices that represent space in formal models, and in sociology
+and human geography, the trend in segregation research is increasingly sophisticated concepts of the
+local neighborhood experienced by each resident.
 
 One prominent body of work explores the notion of "egohoods," where each household has its own
 concept of the neighborhood that extends outward and partially overlaps with others nearby

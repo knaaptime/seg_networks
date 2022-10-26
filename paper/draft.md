@@ -21,7 +21,8 @@ fontsize: 10pt # for fancy_article use 11
 sansitup: True
 thanks: "This work is supported by NSF-SES Grant 1831615"
 anonymous: False
-header-includes: []  # additional latex pkgs if necessary
+header-includes:  | #[]  # additional latex pkgs if necessary
+  \usepackage{longtable}
 ---
 
 

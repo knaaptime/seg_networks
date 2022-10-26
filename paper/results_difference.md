@@ -31,8 +31,6 @@ reasonably large, with the network-based segregation measure approximately 20% h
 euclidean-based measure on average. The largest relative difference gets as high as 69% (Carson
 City, NV).
 
-!include tables/one_pct_pandas.md
-
 
 [^CRS]: For each CBSA in our sample, our euclidean distances are based on UTM coordinate systems,
 with each region's data projected into its appropriate UTM zone.

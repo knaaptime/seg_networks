@@ -4,15 +4,15 @@ street_length_total,edge,total length (meters) of streets in graph
 street_segment_count,edge,count of street segments in graph
 street_length_avg,edge,mean street length
 street_density_km,edge,street density (per km)
-self_loop_proportion,edge,A self-loop is defined as an edge from node u to node v where u==v.
+self_loop_proportion,edge,A self-loop is defined as an edge from node u to node v where u equals v.
 circuity_avg,edge,Sum of edge lengths divided by the sum of straight-line distances between edge endpoints
-k_avg,node,average node degree
-intersection_count,node,total nodes/intersections
-intersection_density_km,node,nodes/intersections per km
-node_props_dead_end,node,proportion of nodes ending in dead end
-node_props_3way,node,proprotion of 3-way intersections
-node_props_4way,node,proportion of 4-way intersections
-cyclomatic,network,\alpha=e-v+1
-meshedness,network,\alpha=\frac{e-v+1}{2 v-5}
-edge_node_ratio,network,m / k
-gamma,network,\alpha=\frac{e}{3(v-2)}
+intersection_count,node,total nodes divided by total intersections
+intersection_density_km,node,nodes divided by intersections per km
+node_props_dead_end,network,proportion of nodes ending in dead end
+k_avg,network,average node degree
+node_props_3way,network,proprotion of 3-way intersections
+node_props_4way,network,proportion of 4-way intersections
+cyclomatic,network,"the number of primary loops in the network. The greater the number of loops, the greater the number of possible routes in the city"
+meshedness,network,ratio of the number of faces in the network to the maximum possible number of loops in an equivalent network with the same number nodes
+edge_node_ratio,network,ratio of streets to intersections
+gamma,network,number of edges divided divided by 3 times (nodes minus 2) 
