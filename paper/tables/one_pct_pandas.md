@@ -1,11 +1,22 @@
-\begin{table}
-\centering
+\begin{longtable}{lrrrrr}
 \caption{CBSAs with Highly Significant $\Delta_{\tilde{H}}$}
-\label{tbl:one_pct_diffs}
-\begin{tabular}{lrrrrr}
+\label{tbl:one_pct_diffs}\\
 \toprule
                                         name &  $\tilde{H}_{net}$ &  $\tilde{H}_{euc}$ &  $\Delta_{\tilde{H}}$ &  $\Delta_{pct}$ &  pseudo-$p$ \\
 \midrule
+\endfirsthead
+\caption[]{CBSAs with Highly Significant $\Delta_{\tilde{H}}$} \\
+\toprule
+                                        name &  $\tilde{H}_{net}$ &  $\tilde{H}_{euc}$ &  $\Delta_{\tilde{H}}$ &  $\Delta_{pct}$ &  pseudo-$p$ \\
+\midrule
+\endhead
+\midrule
+\multicolumn{6}{r}{{Continued on next page}} \\
+\midrule
+\endfoot
+
+\bottomrule
+\endlastfoot
                                Anchorage, AK &              0.135 &              0.092 &                 0.043 &           0.470 &       0.002 \\
         Atlanta-Sandy Springs-Alpharetta, GA &              0.321 &              0.293 &                 0.028 &           0.095 &       0.001 \\
             Austin-Round Rock-Georgetown, TX &              0.174 &              0.152 &                 0.023 &           0.150 &       0.006 \\
@@ -60,6 +71,4 @@
   Virginia Beach-Norfolk-Newport News, VA-NC &              0.206 &              0.161 &                 0.045 &           0.277 &       0.000 \\
 Washington-Arlington-Alexandria, DC-VA-MD-WV &              0.240 &              0.220 &                 0.020 &           0.092 &       0.001 \\
                             Worcester, MA-CT &              0.200 &              0.156 &                 0.044 &           0.281 &       0.001 \\
-\bottomrule
-\end{tabular}
-\end{table}
+\end{longtable}

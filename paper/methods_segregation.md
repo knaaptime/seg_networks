@@ -128,7 +128,9 @@ observation $i$. Using these weights matrices $W_{net}$ and $W_{euc}$ to build l
 for each metropolitan region in @eq:weights propagates the two constructs through
 [@eq:lag; @eq:proportion; @eq:density; @eq:entropy; @eq:sit], yielding two segregation measures
 $\tilde{H}_{net}$, $\tilde{H}_{euc}$ and, implicitly, a difference between the two,
-$\Delta_{\tilde{H}} = \tilde{H}_{net} - \tilde{H}_{euc}$. The relative difference between segregation measures is the difference divided by the euclidean measure $\Delta_{pct} = \frac{\Delta_{\tilde{H}}}{\tilde{H}_{euc}}$
+$\Delta_{\tilde{H}} = \tilde{H}_{net} - \tilde{H}_{euc}$. The relative difference between
+segregation measures is the difference divided by the euclidean measure $\Delta_{pct} =
+\frac{\Delta_{\tilde{H}}}{\tilde{H}_{euc}}$
 
 
 ### Inferential Framework
