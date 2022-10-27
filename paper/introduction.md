@@ -47,7 +47,7 @@ of distance, then there may be much to learn about the contribution of network s
 when seeking to maximize urban integration.
 
 <!-- Antecedents -->
-## Designing and Measuring Urban Space
+## Urban Infrastructure and Social Interactions
 
 Since the inception of city planning, the relationship between social interactions and the built
 environment has been a topic of intense focus for both social scientists and urban designers
@@ -74,45 +74,7 @@ question how well features of the real urban fabric are represented in quantitat
 interaction, such as segregation indices--and whether urban design characteristics shape our
 perception of these patterns.
 
-Classically, space is represented in fields like sociology by membership inside discrete
-containers--such as a neighborhood unit. Deeply influential scholars like
-[@burgess1928ResidentialSegregation;@Park1925] conceived of neighborhoods or cities as discrete,
-bounded areas that conditioned the social behavior of residents living inside them. As ideas from
-the Chicago School of sociology began permeating the nascent field of regional science in the 1950s,
-economists and location theorists combined them with concepts from @von_thunen_isolierte_1826,
-@christaller1937LandlicheSiedlungsweise, and @christaller1937LandlicheSiedlungsweise, using distance
-from the city center to explain the arrangement of jobs and housing as well as the transport of
-goods from outlying agricultural areas to markets at the urban core
-[@ullman1941TheoryLocation;@sinclair1967ThunenUrban], culminating in the famous monocentric city
-model [@alonso1964LocationLand;@mills1967AggregativeModel;@muth1969CitiesHousing]. 
-
-<!-- Value-Added -->
-
-The monocentric model signals a change in the representation of *space* from a discrete concept to a
-continuous one, and given the focus on urban economic processes such as weight loss and weight gain,
-transport connectivity is implicit in these early concepts, but additional considerations such as
-highway throughput or shipping lanes are not considered in early economic models because neither the
-data nor computational power existed to dig deeper. In recent decades, that pattern has changed
-dramatically. Given the rapid adoption of technologies like GIS, combined with exploding data
-resources, statistical literacy, and computational power, a wide variety of social scientists are
-exploring more realistic methods for incorporating spatial relationships into their analyses. In
-fields like quantitative geography and spatial econometrics, this trend is revealed by the
-increasing focus on spatial weights matrices that represent space in formal models, and in sociology
-and human geography, the trend in segregation research is increasingly sophisticated concepts of the
-local neighborhood experienced by each resident.
-
-One prominent body of work explores the notion of "egohoods," where each household has its own
-concept of the neighborhood that extends outward and partially overlaps with others nearby
-[@hipp2013EgohoodsWaves;@petrovic2019FreedomTyranny;@petrovic2018MultiscaleMeasures]. Elsewhere,
-scholars have examined the role of physical barriers and built features of the urban environment in
-facilitating social contact. For example @grannis2005TCommunitiesPedestrian shows social
-interactions are more frequent inside "T-communities" defined by street networks,
-@roberto2018SpatialProximity uses street networks to measure segregation in a small-scale case
-study, and a variety of authors have begun to examine the role of spatial scale
-[@lee2008CensusTract;@reardon2008GeographicScale;@bezenac2022MeasuringVisualizing;@olteanu2019SegregationMultiscalar;@osth2015MeasuringScale; @clark2015MultiscalarAnalysis]
-
-<!-- Road-map -->
-
+<!-- value add -->
 Now we have both the tools and the logic to test these assumptions and understand the role of
 abstractions such as euclidean distance-based measures in our assessment of critical social
 processes such as residential segregation. Fast graph algorithms allow us to construct more
@@ -120,6 +82,8 @@ realistic concepts of spatial weights matrices, and computational statistics all
 and test realistic null hypotheses about the allocation of urban population groups. Here, we examine
 the role of street network topology in the appropriate measurement of urban segregation. Our goals
 are twofold.
+
+<!-- Road-map -->
 
 First, we aim to understand the implications of simple Euclidean distance- based abstractions when
 conducting formal spatial analyses; that is, do we find substantive differences in results when more

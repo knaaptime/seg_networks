@@ -1,8 +1,8 @@
 ## Network Distance is an Important Consideration
 
 <div id=fig:net_vs_euc>
-![Segregation based on planar and network distances by CBSA. The 45-degree line of equality is shown as dashed. ](figures/scatter.png){#fig:scatter width=50%}
-![Histogram of % Differences in Segregation Measures](figures/diff_hist.png){#fig:diff_hists width=50%}
+![Segregation based on planar and network distances by CBSA. The 45-degree line of equality is shown as dashed. ](figures/scatter.png){#fig:scatter width=45%}
+![Histogram of % Differences in Segregation Measures](figures/diff_hist.png){#fig:diff_hists width=45%}
 
 Network vs. Eudlidean-based Segregation Indices
 </div>
