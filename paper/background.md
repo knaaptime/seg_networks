@@ -1,8 +1,30 @@
 
-Classically, space is treated as a discrete concept, by membership in a group (i.e. a school,
-classroom, neighborhood, or city), where any of these groupings is defined exogenously.
+Classically, space is represented in fields like sociology by membership inside discrete
+containers--such as a neighborhood unit. Deeply influential scholars like
+[@burgess1928ResidentialSegregation;@Park1925] conceived of neighborhoods or cities as discrete,
+bounded areas that conditioned the social behavior of residents living inside them. As ideas from
+the Chicago School of sociology began permeating the nascent field of regional science in the 1950s,
+economists and location theorists combined them with concepts from @von_thunen_isolierte_1826,
+@christaller1937LandlicheSiedlungsweise, and @christaller1937LandlicheSiedlungsweise, using distance
+from the city center to explain the arrangement of jobs and housing as well as the transport of
+goods from outlying agricultural areas to markets at the urban core
+[@ullman1941TheoryLocation;@sinclair1967ThunenUrban], culminating in the famous monocentric city
+model [@alonso1964LocationLand;@mills1967AggregativeModel;@muth1969CitiesHousing]. 
 
-## Measuring Spatial Relationships in Segregation Analysis
+The monocentric model signals a change in the representation of *space* from a discrete concept to a
+continuous one, and given the focus on urban economic processes such as weight loss and weight gain,
+transport connectivity is implicit in these early concepts, but additional considerations such as
+highway throughput or shipping lanes are not considered in early economic models because neither the
+data nor computational power existed to dig deeper. In recent decades, that pattern has changed
+dramatically. Given the rapid adoption of technologies like GIS, combined with exploding data
+resources, statistical literacy, and computational power, a wide variety of social scientists are
+exploring more realistic methods for incorporating spatial relationships into their analyses. In
+fields like quantitative geography and spatial econometrics, this trend is revealed by the
+increasing focus on spatial weights matrices that represent space in formal models, and in sociology
+and human geography, the trend in segregation research is increasingly sophisticated concepts of the
+local neighborhood experienced by each resident.
+
+## Incorporating Distance into Segregation Indices
 
 ### Making Space Explicit
 
@@ -17,23 +39,39 @@ classroom, neighborhood, or city), where any of these groupings is defined exoge
 
 ### Interrogating Spatial Scale
 
-@lee2008CensusTract
-@reardon2008GeographicScale
-@bezenac2022MeasuringVisualizing
-@olteanu2019SegregationMultiscalar
-@osth2015MeasuringScale
-@clark2015MultiscalarAnalysis
-
+ A variety of authors have begun to examine the role of spatial scale. In an important advance in
+ segregation methods, @reardon2008GeographicScale develop a method for understanding the
+ implications of multiscalar segregation by varying the distance parameter used to compute the local
+ environment in a spatial segregation index, and @lee2008CensusTract apply the framework to a large
+ set of metropolitan regions in the U.S., demonstrating a wide variety of macro versus micro-scaled
+ patterns. Another prominent body of work builds on this work, exploring the notion of "egohoods,"
+ where each household has its own concept of the neighborhood that extends outward and partially
+ overlaps with others nearby
+ [@hipp2013EgohoodsWaves;@petrovic2019FreedomTyranny;@petrovic2018MultiscaleMeasures]. Even more
+ recently, additional measurement techniques have been developed that help summarize multiscalar
+ patterns using a single index (as opposed to an array or a ratio)
+ [@bezenac2022MeasuringVisualizing;@olteanu2019SegregationMultiscalar;@osth2015MeasuringScale; @clark2015MultiscalarAnalysis].
+ Together this research has provided clear evidence not only of the importance of considering
+ spatial relationships in segregation measurement, but also the ways that misspecification of space
+ (such as application of an inappropriate scale) can lead to a skewed concept of the phenomenon
+ under study.
 
 ## Transportation and Social Interaction
 
-A long-recognized but understudied element of metropolitan segregation patterns is the role of
-transport networks, physical barriers, and other factors such as elevation or congestion that change
-travel behavior, and thus, the expected potential for social interaction in space. For example work
-in sociology has shown the importance of street network connectivity in fostering connected social
-networks inside small urban geographic zones [@grannis1998ImportanceTrivial]. 
-
-@grannis2005TCommunitiesPedestrian
+Elsewhere, scholars have examined the role of physical barriers and built features of the urban
+environment in facilitating social contact. For example @grannis2005TCommunitiesPedestrian shows
+social interactions are more frequent inside "T-communities" defined by street networks
+[@grannis2005TCommunitiesPedestrian], and @roberto2018SpatialProximity uses street networks to
+measure segregation in a small-scale case study, and shows that segregation in Pittsburgh is higher
+when measured according to network distance. These contributions emphasize a long-recognized but
+understudied element of metropolitan segregation patterns, namely that transport networks, physical
+barriers, and other factors such as elevation or congestion change the expected potential for social
+interaction in space. For example work in sociology has shown the importance of street network
+connectivity in fostering connected social networks inside small urban geographic zones
+[@grannis1998ImportanceTrivial]. The natural logic underlying these findings is that street networks
+can help insulate urban environments and provide greater exposure to residents living inside "the
+neighborhood" than those who live outside, but this distinction can be masked easily when measuring
+metropolitan space using euclidean distances.
 
 <div id='fig:network_distance'>
 ![Network Distance vs Euclidean Distance](figures/network_distance.png){#fig:distance_sd width=49%}
@@ -66,17 +104,15 @@ expressway provides a man-made physical barrier that impedes travel in the south
 creating a hard edge in the inner polygon except along a single passageway. A similar phenomenon
 impedes traffic in the northward direction, as the network does not extend into Saint Luke Cemetery.
 
-Recent work by @roberto2018SpatialProximity shows the importance of considering network distances
-when measuring segregation using both simulated data and an empirical example in Pittsburgh, PA.
-That study shows that segregation is consistently higher at all spatial scales when the measure
-accounts for local network connectivity. As @roberto2018SpatialProximity [p. 28] notes, "even small
-positive differences in the city-level results are meaningful and suggest that physical barriers
-facilitate greater separation between ethnoracial groups and higher levels of segregation." We agree
-with the spirit of this assessment, however, we would extend and clarify that physical barriers
-themselves do not necessarily create greater separation between groups--although action by other
-parts of the urban system such as racial steering by lenders or agents can (and does) interact with
-these barriers to create segregated real estate markets and phenomena such as one group living on
-the "other side of the tracks" [@roberto2018SpatialProximity].
+Using evidence from a case study in Pittsburgh, @roberto2018SpatialProximity [p. 28] argues that,
+"even small positive differences in the city-level results are meaningful and suggest that physical
+barriers facilitate greater separation between ethnoracial groups and higher levels of segregation."
+We agree with the spirit of this assessment, however, we would extend and clarify that physical
+barriers themselves do not necessarily create greater separation between groups--although action by
+other parts of the urban system such as inequitable land use planning or racial steering by lenders
+or agents can (and does) interact with these barriers to create segregated real estate markets and
+phenomena such as one group living on the "other side of the tracks"
+[@roberto2018SpatialProximity]. 
 
 Further, as @fig:network_distance shows, it is not simply the presence of physical barriers, but
 also the geometric design and topological structure of the travel network that facilitates
