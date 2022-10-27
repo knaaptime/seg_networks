@@ -30,11 +30,11 @@ header-includes:  | #[]  # additional latex pkgs if necessary
 
 !include introduction.md
 
-# Urban Infrastructure and Social Interactions
+# Measuring Segregation in Space
 
 !include background.md
 
-# The Role of Network Distance in Segregation Measurement
+# The Role of Street Networks in Social Separation
 
 <!-- describe segregation measures and inference framewrok -->
 !include methods_segregation.md

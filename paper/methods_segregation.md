@@ -7,7 +7,7 @@ sensitive the statistic is to different concepts of the "local environment," wit
 adopting the simplified assumption of euclidean-based distance measurements, and the other requiring
 that distance be measured along a pedestrian transport network.
 
-## Measuring Segregation in Space
+## Computing Spatial Segregation Indices
 
 <!-- computing indices -->
 
@@ -130,10 +130,10 @@ for each metropolitan region in @eq:weights propagates the two constructs throug
 $\tilde{H}_{net}$, $\tilde{H}_{euc}$ and, implicitly, a difference between the two,
 $\Delta_{\tilde{H}} = \tilde{H}_{net} - \tilde{H}_{euc}$. The relative difference between
 segregation measures is the difference divided by the euclidean measure $\Delta_{pct} =
-\frac{\Delta_{\tilde{H}}}{\tilde{H}_{euc}}$
-
+\frac{\Delta_{\tilde{H}}}{\tilde{H}_{euc}}$.
 
 ### Inferential Framework
+
 We assess the importance of considering network distance in segregation measurement by adopting the
 inferential framework outlined in @rey2021ComparativeSpatial and @cortes2020OpensourceFramework. The
 framework leverages a computational approach to statistical inference using random labelling to
@@ -148,12 +148,13 @@ We then create two synthetic datasets by pooling the input units from both origi
 reassigning them at random. For each block-group, we randomly reassign the labels $(net,euc)$ to the
 observed spatial lags from @eq:lag. Once all units have been assigned to a group, the segregation
 measures are re-computed and their difference taken. This process is repeated 10,000 iterations. By
-comparing the observed difference between the two segregation measures against a distribution of
-differences generated via synthetic datasets, we can develop pseudo p-values based on a standard
-T-test. Our test in this case measures the empirical likelihood of obtaining the observed difference
-at random under the null hypothesis that the observed difference is within the standard range of
-differences[^null]. The pseudo-$p$ values represent probability of obtaining results in which the
-simulated difference was greater than the observed difference $\Delta_{\tilde{H}}$.
+comparing the observed difference in the two segregation measures against a distribution of
+differences generated via synthetic datasets, we can develop pseudo $p$-values based on a
+conventional T-test. Our test, in this case, adopts the null hypothesis that the observed difference
+is within the standard range of differences[^null], and measures the empirical likelihood of
+obtaining the observed difference at random, given the observed data. The pseudo-$p$ values
+represent probability of obtaining results in which the simulated difference was greater than the
+observed difference $\Delta_{\tilde{H}}$.
 
 
 <!-- I think for random labeling the null is that the difference is 0. Not sure I understand the footnote? -->
@@ -162,5 +163,5 @@ value" is the mean of the simulated parameter distribution.
 
 [^grannis]: Notably, however, a similar notation is used by @grannis2002DiscussionSegregation who
 defines the spatial weights matrix as $C$, in recognition of the common specification as a
-connectivity matrix. The author also acknowledges clearly (p. 77), that other functions such as
-inverse-distance weighting are also appropriate.
+connectivity matrix. Grannis also acknowledges (p. 77) that other functions such as inverse-distance
+weighting may be appropriate.
