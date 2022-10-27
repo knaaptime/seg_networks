@@ -25,7 +25,11 @@ All else equal, the difference should be smaller when: cycloymatic complexity an
 higher, and when circuity is lower. Each of these conditions should, in theory, lead to greater flow
 along the network and a better approximation of unconstrained euclidean travel.
 
-<!-- need to fix the layout of this table -->
+<!-- 
+To modify this table, edit the contents of data/network_variables.csv
+then, generate the latex by running notebooks/model_difference.ipynb
+-->
+
 !include tables/variables.md
 
 Cyclomatic complexity can be viewed as a measure of the network's redundancy, and its ability to
@@ -51,6 +55,7 @@ that users have only one choice of movement and any point failure in that route 
 disruption on performance. In turn, grid-like networks provide many ways to get to a same place,
 greater choice for the user and reduced impact of point failure." 
 
+<!-- Martin says she's cool with us using this fig -->
 ![Stylized Depiction of Meshedness by @feliciotti2018ResilienceUrban](figures/meshedness.png){#fig:meshedness width=80%}
 
 In the example of @fig:network_distance, the network in San Clemente [@fig:distance_sd] is more

@@ -7,7 +7,7 @@ sensitive the statistic is to different concepts of the "local environment," wit
 adopting the simplified assumption of euclidean-based distance measurements, and the other requiring
 that distance be measured along a pedestrian transport network.
 
-## Measuring Segregation in Space
+## Computing Spatial Segregation Indices
 
 <!-- computing indices -->
 

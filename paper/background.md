@@ -104,7 +104,7 @@ expressway provides a man-made physical barrier that impedes travel in the south
 creating a hard edge in the inner polygon except along a single passageway. A similar phenomenon
 impedes traffic in the northward direction, as the network does not extend into Saint Luke Cemetery.
 
-Using evidence from a case study in Pittsburge, @roberto2018SpatialProximity [p. 28] argues that,
+Using evidence from a case study in Pittsburgh, @roberto2018SpatialProximity [p. 28] argues that,
 "even small positive differences in the city-level results are meaningful and suggest that physical
 barriers facilitate greater separation between ethnoracial groups and higher levels of segregation."
 We agree with the spirit of this assessment, however, we would extend and clarify that physical
