@@ -5,7 +5,7 @@ containers--such as a neighborhood unit. Deeply influential scholars like
 bounded areas that conditioned the social behavior of residents living inside them. As ideas from
 the Chicago School of sociology began permeating the nascent field of regional science in the 1950s,
 economists and location theorists combined them with concepts from @von_thunen_isolierte_1826,
-@christaller1937LandlicheSiedlungsweise, and @christaller1937LandlicheSiedlungsweise, using distance
+@christaller1937LandlicheSiedlungsweise, and @losch1940RaumlicheOrdnung, using distance
 from the city center to explain the arrangement of jobs and housing as well as the transport of
 goods from outlying agricultural areas to markets at the urban core
 [@ullman1941TheoryLocation;@sinclair1967ThunenUrban], culminating in the famous monocentric city
@@ -28,25 +28,44 @@ local neighborhood experienced by each resident.
 
 ### Making Space Explicit
 
-@reardon2004MeasuresSpatial
-@reardon2009RaceSpace
-@wong1997SpatialDependency
-@bailey2012HowSpatial
-@rey2011ImpactSpatial
-@osullivan2007SurfaceBasedApproach
-@wong2004ComparingTraditional
-@dawkins2004MeasuringSpatial
+In a seminal contribution, @white1983MeasurementSpatial conceives of segregation in terms of spatial
+interaction, and formulates a spatial dissimilarity index using an exponential decay function to
+weight the proximity between observed census units. Despite the importance of the contribution, the
+application of White's technique has never become widespread, perhaps in part because of the
+difficulty in operationalizing the index prior to modern GIS. Through the 1990s a surge of research
+on spatial segregation indices examined different methods for incorporating space, leveraging the
+growing GIS capacity of the era. An important critique of the time is given by
+@wong1993SpatialIndices who shows that spatial segregation indices based on contiguity between
+adjacent units provide poor definitions of the local neighborhood. This criticism is based in part
+because geographic units are heterogenously-sized and also because polygon adjacency may be a poor
+measurement of "nearness". Additional work has explored the sensitivitiy of segregation measures to
+the modifiable areal unit problem (MAUP) [@openshaw1984EcologicalFallacies], and by extension, the
+importance of spatial scale [@wong1997SpatialDependency;@wong2004ComparingTraditional]. Some authors
+have also developed spatial extensions or deompositions of popular indices such as the Gini index
+[@dawkins2004MeasuringSpatial;@rey2011ImpactSpatial]
+
+In a canonical contribution to the segregation literature, @reardon2004MeasuresSpatial develop a
+generalized framework for creating spatial segregation indices using a generic formulation of the
+neighborhood. They also show that the spatial information theory index $\tilde{H}$ and the spatial
+isolation/exposure index $\tilde{P}^\ast$ have the most desirable conceptual and mathematical
+properties. @osullivan2007SurfaceBasedApproach provide an operationalization of this approach using
+kernel density estimation to operationalize the notion of the neighborhood in continuous space,
+overcoming many of the traditional criticisms of spatial segregation measures. In doing so, they
+provided an important path forward for a continuing body of work that has continued to expand the
+notion of space.
 
 ### Interrogating Spatial Scale
 
  A variety of authors have begun to examine the role of spatial scale. In an important advance in
  segregation methods, @reardon2008GeographicScale develop a method for understanding the
  implications of multiscalar segregation by varying the distance parameter used to compute the local
- environment in a spatial segregation index, and @lee2008CensusTract apply the framework to a large
- set of metropolitan regions in the U.S., demonstrating a wide variety of macro versus micro-scaled
- patterns. Another prominent body of work builds on this work, exploring the notion of "egohoods,"
- where each household has its own concept of the neighborhood that extends outward and partially
- overlaps with others nearby
+ environment in a spatial segregation index. Following, @reardon2009RaceSpace and
+ @lee2008CensusTract apply the framework to a large set of metropolitan regions in the U.S.,
+ demonstrating a wide variety of macro versus micro-scaled patterns and other work has explored the
+ role of multiscalar change over time [@bailey2012HowSpatial;@fowler2016SegregationMultiscalar].
+ Another prominent body of work builds on this work, exploring the notion of "egohoods," where each
+ household has its own concept of the neighborhood that extends outward and partially overlaps with
+ others nearby
  [@hipp2013EgohoodsWaves;@petrovic2019FreedomTyranny;@petrovic2018MultiscaleMeasures]. Even more
  recently, additional measurement techniques have been developed that help summarize multiscalar
  patterns using a single index (as opposed to an array or a ratio)
