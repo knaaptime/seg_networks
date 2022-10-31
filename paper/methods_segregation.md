@@ -11,33 +11,34 @@ that distance be measured along a pedestrian transport network.
 
 <!-- computing indices -->
 
-Following @reardon2004MeasuresSpatial we consider a spatial region $R$ populated by $M$ racial
+Following @reardon2004MeasuresSpatial we consider a spatial region populated by $M$ racial
 groups indexed by $m$, with $\tau$ and $\pi$ as population density and proportion, respectively.
 Here we diverge from the classical notation in the segregation literature and instead adopt
-conventions more common in spatial econometrics and geographic analysis[^grannis]. Doing so allows us to
-strengthen the connection between similar concepts in different disciplines as well as gain finer
-control over the definition of spatial relationships. Since many spatial segregation measures are
-implemented in GIS and spatial analysis software designed by geographers, clarifying this connection
-can help ease interdisciplinary adoption and conversation around spatial segregation measures.
+conventions more common in spatial econometrics and geographic analysis[^grannis]. Doing so allows
+us to strengthen the connection between similar concepts in different disciplines as well as gain
+finer control over the definition of spatial relationships. Since many spatial segregation measures
+are implemented in GIS and spatial analysis software designed by geographers, clarifying this
+connection can help ease interdisciplinary adoption and conversation around spatial segregation
+measures.
 
-Thus, we index locations within $R$ as $i$ and $j$, and we operationalize the concept of spatial
-relationships using a spatial weights matrix $W_{ij}$. By focusing on $W_{ij}$, we are forced "to
-specify [our] underlying assumptions about socio-spatial proximity", following the call by
-@reardon2004MeasuresSpatial [p.154] for analysis that "compares segregation levels based on
-different theoretical bases for defining spatial proximity." Conceptually, the spatial weights
-matrix $W_{ij}$ is connectivity graph that defines the spatial relationship between nodes $i$ and
-$j$, and the values $w_{ij}$ encode the intensity of the edge $\bar{ij}$. Thus, the spatial weights
-matrix is a useful and flexible representation of the local neighborhood environment because it
-provides a generic data structure for encoding spatial relationships, where any link function
-($\phi$, following the notation of @reardon2004MeasuresSpatial) can be used to specify the proximity
-between units. Formally,
+Thus, we index locations as $i$ and $j$, and we operationalize the concept of spatial
+relationships using a spatial weights matrix $W$ [@cliff1970SpatialAutocorrelation]. By focusing on
+$W$, we are forced "to specify [our] underlying assumptions about socio-spatial proximity",
+following the call by @reardon2004MeasuresSpatial [p.154] for analysis that "compares segregation
+levels based on different theoretical bases for defining spatial proximity." Conceptually, the
+spatial weights matrix $W$ is connectivity graph that defines the spatial relationship between
+nodes $i$ and $j$, and the values $w_{ij}$ encode the intensity of the edge $\bar{ij}$. Thus, the
+spatial weights matrix is a useful and flexible representation of the local neighborhood environment
+because it provides a generic data structure for encoding spatial relationships, where any link
+function ($\phi$, following the notation of @reardon2004MeasuresSpatial) can be used to specify the
+proximity between units. Formally,
 
 <!-- if we're following reardon's notation, does $D$ below need to be $R$ ? -->
 $$
-W_{ij} = \phi(D_{ij})
+W = \phi(D)
 $$ {#eq:weights}\
 Where $\phi$ is a proximity weighting function and $D$ is a matrix containing pairwise distances for
-$i$ and $j$. Classically, $W_{ij}$ is typically created via binary connectivity between adjacent
+$i$ and $j$. Classically, $W$ is typically created via binary connectivity between adjacent
 units, but a wide variety of other continuous specifications are also used in practice
 [@getis2009SpatialWeights;@rey2010PySALPython;@halleckvega2015SLXMODEL], such as the euclidean
 distance between observations, or various kernel or distance-decay functions. Critically, the
@@ -50,14 +51,13 @@ defined as
 
 $$
 SL_i = \sum_j w_{ij} y_j
-$$ {#eq:lag}\
-In the spatial econometrics literature, it is common to exclude the diagonal elements from $W_{ij}$
-to differentiate between focal effects and spatial spillovers in regression models, but when the
-diagonal is filled, then $SL_i$ becomes a consummate measure of the local environment at location
-$i$.
+$$ {#eq:lag}
 
-To compute the spatial multigroup information theory index $\tilde{H}$, we first calculate local
-spatially-weighted population proportions as
+In the spatial econometrics literature, it is common to exclude the diagonal elements from $W$ to
+differentiate between focal effects and spatial spillovers in regression models, but when the
+diagonal is filled, then $SL_i$ becomes a consummate measure of the local environment at location
+$i$. To compute the spatial multigroup information theory index $\tilde{H}$, we first calculate
+local spatially-weighted population proportions as
 
 $$
 \tilde{\pi}_{im} = \frac{SL_{im}}{\sum^M_{m=1}{SL_{im}}}
@@ -83,7 +83,6 @@ perform all calculations using the open-source Python package `segregation`
 [@rey2021PySALEcosystem]
 
 ## Assessing Difference Between Distance Metrics
-<!--data -->
 
 To understand the implications of different parameterizations of space, we use data blockgroup-level
 from the US Census American Community Survey (ACS) 5-year sample (2013-2017) with four
@@ -99,12 +98,13 @@ Our data on street networks is collected from OpenStreetMap and the shortest net
 computed using the Python package `pandana` [@foti2012GeneralizedComputational]. To operate
 efficiently on metropolitan-scale street networks, the pandana package relies on a graph
 pre-processing technique known as contraction hierarchies that simplifies the computation by
-removing inconsequential nodes from consideration during the routing algorithm. 
-
-
+removing inconsequential nodes from consideration during the routing algorithm
+[@geisberger2012ExactRouting]. Adopting this heuristic provides a massive computational boost,
+allowing the shortest-path algorithm to perform quickly, even with metropolitan-scale networks. This
+technique allows us to examine all metropolitan CBSAs in the country, comprising an analysis that
+includes tens of millions of street intersections.
 
 ### Constructing Comparable Indices
-<!-- setup the comparison -->
 
 In each metropolitan region, we proceed by creating two different spatial weights matrices by
 varying the way distance is measured between observations. In both matrices, the proximity-weighting
@@ -121,11 +121,11 @@ $$
 $${#eq:weighting_func}\
 
 Between the two $W$ matrices, however, we vary the input distance matrix $D$, between two concepts,
-euclidean distance and network distance (where network distance is defined as the shortest path
-along the pedestrian transportation network), $W_{net}$, and $W_{euc}$. In both matrices the
-diagonal is set to one, indicating that there is no spatial discount for the value located at
-observation $i$. Using these weights matrices $W_{net}$ and $W_{euc}$ to build local environments
-for each metropolitan region in @eq:weights propagates the two constructs through
+euclidean distance ($W_{euc}$) and network distance ($W_{net}$), where network distance is defined
+as the shortest path along the pedestrian transportation network. In both matrices the diagonal is
+set to one, indicating that there is no spatial discount for the value located at observation $i$.
+Using these weights matrices $W_{net}$ and $W_{euc}$ to build local environments for each
+metropolitan region in @eq:weights propagates the two constructs through
 [@eq:lag; @eq:proportion; @eq:density; @eq:entropy; @eq:sit], yielding two segregation measures
 $\tilde{H}_{net}$, $\tilde{H}_{euc}$ and, implicitly, a difference between the two,
 $\Delta_{\tilde{H}} = \tilde{H}_{net} - \tilde{H}_{euc}$. The relative difference between
@@ -139,9 +139,9 @@ inferential framework outlined in @rey2021ComparativeSpatial and @cortes2020Open
 framework leverages a computational approach to statistical inference using random labelling to
 compare the observed difference between the two segregation measures (network versus euclidean) to a
 distribution of differences generated from the same data. More specifically, the measures
-$\tilde{H}_{net}$, $\tilde{H}_{euc}$ and $\Delta_{\tilde{H}}$ are computed and recorded for each metro
-region. As a result of this process, two "spatialized" versions of the metropolitan demographic
-composition are created, with one dataset representing euclidean distances and the other
+$\tilde{H}_{net}$, $\tilde{H}_{euc}$ and $\Delta_{\tilde{H}}$ are computed and recorded for each
+metro region. As a result of this process, two "spatialized" versions of the metropolitan
+demographic composition are created, with one dataset representing euclidean distances and the other
 representing network-based distances.
 
 We then create two synthetic datasets by pooling the input units from both original datasets and
@@ -151,17 +151,13 @@ measures are re-computed and their difference taken. This process is repeated 10
 comparing the observed difference in the two segregation measures against a distribution of
 differences generated via synthetic datasets, we can develop pseudo $p$-values based on a
 conventional T-test. Our test, in this case, adopts the null hypothesis that the observed difference
-is within the standard range of differences[^null], and measures the empirical likelihood of
-obtaining the observed difference at random, given the observed data. The pseudo-$p$ values
-represent probability of obtaining results in which the simulated difference was greater than the
-observed difference $\Delta_{\tilde{H}}$.
+is within the standard range of differences, and measures the empirical likelihood of obtaining the
+observed difference at random, given the observed data. The pseudo-$p$ values represent probability
+of obtaining results in which the simulated difference was greater than the observed difference
+$\Delta_{\tilde{H}}$.
 
-
-<!-- I think for random labeling the null is that the difference is 0. Not sure I understand the footnote? -->
-[^null]: Note this does not explicitly require the null $\Delta_{\tilde{H}}=0$. Instead the "null
-value" is the mean of the simulated parameter distribution.
 
 [^grannis]: Notably, however, a similar notation is used by @grannis2002DiscussionSegregation who
-defines the spatial weights matrix as $C$, in recognition of the common specification as a
-connectivity matrix. Grannis also acknowledges (p. 77) that other functions such as inverse-distance
-weighting may be appropriate.
+defines the spatial weights matrix as $C$, in recognition of the common specification as a binary
+connectivity matrix. Despite this small change, Grannis also describes the applicability of other
+functions such as inverse-distance weighting.
