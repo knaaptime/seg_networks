@@ -1,12 +1,12 @@
 <!-- Hook -->
 
-An exceedingly common abstraction in applied spatial analysis is the use of euclidean distance as a
+An exceedingly common abstraction in applied spatial analysis is the use of Euclidean distance as a
 proxy measure for geographic proximity (which is, itself, often a proxy for the frequency of social
 interaction). It is the geographical scientist's equivalent to the physicist's spherical
 cow[^spherical_cow], or the economist's perfect market: a useful abstraction that helps partially
 explain a much more complex underlying process, however imperfectly. A major difference in spatial
 analysis, however, is that scientists from many disciplines often fail to realize how simplified the
-assumption of euclidean distance is when traversing the built or natural environment. While, in
+assumption of Euclidean distance is when traversing the built or natural environment. While, in
 general, simple proximity is a reasonable heuristic for understanding Tobler's Law
 [@tobler1970ComputerMovie], the behavioral realities of movement and social interaction in complex
 urban environments often require a more thoughtful model.
@@ -16,9 +16,9 @@ perfect freedom of mobility. Rather, they are multifaceted environments populate
 canyons, rivers, mountains, railroad tracks, alleyways, and power plants. To facilitate movement in
 this environment, an interleaved transportation system provides passageways through discrete
 locations, and conditions how easy it is to move throughout the region and interact with individuals
-in other parts of the region. Although pure euclidean distance can proxy this system, the urban
+in other parts of the region. Although pure Euclidean distance can proxy this system, the urban
 design decisions that govern how and where networks are located, as well as the natural features
-like elevation or water features play an important albeit underexamined role in mediating social
+like elevation or water features play an important, albeit underexamined, role in mediating social
 interactions.
 
 One particular topic where a full understanding of space would provide significant benefits is
@@ -29,7 +29,7 @@ Spatial segregation measures embody the notion that proximity to one's neighbors
 specification of residential segregation than simply who resides together inside the same
 arbitrarily-drawn polygon. Thus, they expand the notion of "who is nearby" to include those who are
 geographically close to each polygon rather than a binary inside/outside distinction. Yet spatial
-segregation measures often resort to crude measurements of proximity, such as the euclidean distance
+segregation measures often resort to crude measurements of proximity, such as the Euclidean distance
 between observations, given the complexity and data requirements of calculating more
 theoretically-appropriate measures, such as distance along the pedestrian travel network.
 
@@ -38,10 +38,10 @@ theoretically-appropriate measures, such as distance along the pedestrian travel
 In this paper, we examine the relationship between pedestrian network characteristics and the
 measurement of metropolitan segregation. In doing so, we examine three research questions in turn:
 first, how much does the operationalization of space matter for segregation measurement? More
-specifically, how large is the difference between euclidean-based and network-based measures of
-spatial segregation? Second, if reasonable differences exist between euclidean and network measures,
+specifically, how large is the difference between Euclidean-based and network-based measures of
+spatial segregation? Second, if differences exist between Euclidean and network measures,
 are they large enough that they cannot be attributed to chance? Third, what characteristics of the
-travel network explain the observed difference in measurement? If there is a large and/or systematic
+travel network are related to the observed difference in measurement? If there is a large and/or systematic
 difference between traditional spatial measurements and those leveraging more realistic measurements
 of distance, then there may be much to learn about the contribution of network structure and design
 when seeking to maximize urban integration.
@@ -76,7 +76,7 @@ perception of these patterns.
 
 <!-- value add -->
 Now we have both the tools and the logic to test these assumptions and understand the role of
-abstractions such as euclidean distance-based measures in our assessment of critical social
+abstractions such as Euclidean distance-based measures in our assessment of critical social
 processes such as residential segregation. Fast graph algorithms allow us to construct more
 realistic concepts of spatial weights matrices, and computational statistics allow us to construct
 and test realistic null hypotheses about the allocation of urban population groups. Here, we examine

@@ -16,7 +16,7 @@ topology metrics to explain the variation we observe in $\Delta_{tilde{H}}$.
 
 We use the Python packages OSMNx [@boeing2016OSMnxNew] and Momepy [@fleischmann2019MomepyUrban] to
 create measures of the pedestrian travel network collected from OpenStreetMap. Together, these
-variable provide an overall summary of the morphophological properties of the travel graph
+measures provide an overall summary of the morphophological properties of the travel graph
 structure, and are described in @tbl:variables. In addition to simple measures like the total length
 and density of streets, the count and density of intersections, and the proportion of intersections
 at different levels of throughput, we focus in particular on three measures of the graph structure:
