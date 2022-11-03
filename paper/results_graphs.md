@@ -45,7 +45,7 @@ to be large.
 
 Focusing on the network properties, as the proportion of 4-way intersections increases
 the difference between segregation measured using network and planar distances grows.
-Segregation differences also growth with the average node incidence, street length, edge
+Segregation differences also grow with the average node incidence, street length, edge
 length, and circuity of the network. In general, as the size of the network increases,
 the difference in the segegation measures decreases. The relative differences in
 segregation measures are negatively associated with the level of segregation in the

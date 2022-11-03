@@ -70,7 +70,7 @@ notion of space.
  recently, additional measurement techniques have been developed that help summarize multiscalar
  patterns using a single index (as opposed to an array or a ratio)
  [@bezenac2022MeasuringVisualizing;@olteanu2019SegregationMultiscalar;@osth2015MeasuringScale; @clark2015MultiscalarAnalysis].
- Together this research has provided clear evidence not only of the importance of considering
+ This research has provided clear evidence not only of the importance of considering
  spatial relationships in segregation measurement, but also the ways that misspecification of space
  (such as application of an inappropriate scale) can lead to a skewed concept of the phenomenon
  under study.
@@ -84,7 +84,7 @@ social interactions are more frequent inside "T-communities" defined by street n
 measure segregation in a small-scale case study, and shows that segregation in Pittsburgh is higher
 when measured according to network distance. These contributions emphasize a long-recognized but
 understudied element of metropolitan segregation patterns, namely that transport networks, physical
-barriers, and other factors such as elevation or congestion change the expected potential for social
+barriers, and other factors such as elevation or congestion condition the expected potential for social
 interaction in space. For example work in sociology has shown the importance of street network
 connectivity in fostering connected social networks inside small urban geographic zones
 [@grannis1998ImportanceTrivial]. The natural logic underlying these findings is that street networks
@@ -140,7 +140,7 @@ cul-de-sacs in San Clemente stand in sharp contrast to the dense, regular grid i
 though the network in Chicago also includes additional barriers like highways. In what follows, we
 examine the magnitude of differences between network and simple euclidean measures in detail for
 every metropolitan region in the United States. Specifically, we expand upon prior work in three
-different directions. First, we expand the geographic scope by considering every metropolitan region
+different directions. First, we widen the geographic scope by considering every metropolitan region
 in the United States, rather than a case study of a single city. Second, we adopt a computational
 inference framework that allows us to assess whether the observed differences between the
 segregation measures are large enough that they could not happen by chance. Finally, we explore the
