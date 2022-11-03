@@ -9,14 +9,15 @@ A recent evolution of this work is the conception of a travel network as a forma
 and a set of software tools that facilitate its analysis as such
 [@boeing2016OSMnxNew;@fleischmann2019MomepyUrban]. Understanding the travel network as a topological
 graph provides a different picture of its accessibility structure and the way it facilitates
-interaction among residents [@levinson2017ElementsAccess]. 
+interaction among residents [@levinson2017ElementsAccess]. Here our goal is to use these graph
+topology metrics to explain the variation we observe in $\Delta_{tilde{H}}$.
 
 ## Measuring Graph Structure
 
 We use the Python packages OSMNx [@boeing2016OSMnxNew] and Momepy [@fleischmann2019MomepyUrban] to
 create measures of the pedestrian travel network collected from OpenStreetMap. Together, these
 variable provide an overall summary of the morphophological properties of the travel graph
-structure, and are described in @tbl:variables. In addition to simple measures like the total lengh
+structure, and are described in @tbl:variables. In addition to simple measures like the total length
 and density of streets, the count and density of intersections, and the proportion of intersections
 at different levels of throughput, we focus in particular on three measures of the graph structure:
 cyclomatic complexity, meshedness, and circuity. In theory, all three measures should be related to
@@ -53,7 +54,7 @@ tree-like network or to a maximally connected grid. As @feliciotti2018Resilience
 strictly tree-like networks, origins and destinations are only linked via a single path, which means
 that users have only one choice of movement and any point failure in that route would cause major
 disruption on performance. In turn, grid-like networks provide many ways to get to a same place,
-greater choice for the user and reduced impact of point failure." 
+greater choice for the user and reduced impact of point failure."
 
 <!-- Martin says she's cool with us using this fig -->
 ![Stylized Depiction of Meshedness by @feliciotti2018ResilienceUrban](figures/meshedness.png){#fig:meshedness width=80%}
