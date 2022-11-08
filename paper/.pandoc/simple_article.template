@@ -133,9 +133,9 @@ $endif$
              Scale             = 1.05,
              Ligatures=TeX]{Barlow}
 \setmonofont[Path = .pandoc/fonts/,
-             Scale=0.8]{OxygenMono-Regular.ttf}
+             Scale=0.9]{OxygenMono-Regular.ttf}
 
-\setmathfont[Path = .pandoc/fonts/]{KpMath-Regular.otf}
+\setmathfont[Path = .pandoc/fonts/]{XCharter-Math.otf}
 
 
 $if(mathfont)$
