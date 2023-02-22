@@ -75,6 +75,8 @@ social science regarding the most satisfactory ways to encode spatial relationsh
 both theoretical and methodological perspectives. Given the results presented here, we
 believe the appropriate operationalization of *space* remains a clear hurdle for
 understanding social interaction and urban inequality. Thus, we close with a classic
-reminder from a legendary scholar in spatial analysis:
-
->It remains for spatial analysts to carefully specify spatial weights matrices so that they truly represent the phenomena being analyzed.[@getis2009SpatialWeights, p.409]
+reminder from a legendary scholar in spatial analysis, that "it remains for spatial
+analysts to carefully specify spatial weights matrices so that they truly represent the
+phenomena being analyzed" [@getis2009SpatialWeights, p.409]. In the context of
+segregation measurement, it is clear that ignoring intentionally-designed aspects of the
+built-environment skews our concept of social interaction.
