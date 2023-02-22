@@ -10,7 +10,7 @@ and a set of software tools that facilitate its analysis as such
 [@boeing2016OSMnxNew;@fleischmann2019MomepyUrban]. Understanding the travel network as a topological
 graph provides a different picture of its accessibility structure and the way it facilitates
 interaction among residents [@levinson2017ElementsAccess]. Here our goal is to use these graph
-topology metrics to explain the variation we observe in $\Delta_{tilde{H}}$.
+topology metrics to explain the variation we observe in $\Delta_{\tilde{H}}$.
 
 ## Measuring Graph Structure
 
