@@ -5,7 +5,7 @@ functions are applied regularly in both the segregation and spatial interaction
 literature. Our initial explorations suggest that our findings are robust to the choice
 of decay function, but future work could explore this issue in greater detail. Further
 work could also explore the choice of neighborhood radius $r$. Here we adopt the
-one-mile neighborhood radius as a reasonable specification of the neighborhood, but we
+one-mile radius as a reasonable specification of the neighborhood, but we
 may obtain different results by choosing a different threshold, particularly when
 analyzing large heterogeneous networks.
 
@@ -36,6 +36,8 @@ is a ripe avenue for further research. In these cases, the significant interacti
 effects are likely created by heterogeneity in large travel networks, and more refined
 measures of subgraphs (rather than aggregate summaries of the entire network) may help
 uncover important localized patterns.
+
+<!-- Check if the previous par matches what may have been dropped earlier -->
 
 There is also a second issue of spatial scale, which is that here we examine all
 relationships at a metropolitan scale. Because housing and labor markets are regional in

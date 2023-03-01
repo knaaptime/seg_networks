@@ -10,7 +10,7 @@ where the correlation matrix is shaded with green hues to indicate a positive
 relationship and purple hues to indicate a negative relationship, with the intensity
 denoting the level of correlation. Here, it is clear that some network metrics are
 capturing the same concept, for example the gamma index is perfectly collinear with the
-average node degree (k_avg) streets per node, and meshedness (given the symmetric nature
+average node degree (k_avg), streets per node, and meshedness (given the symmetric nature
 of the pedestrian network, the average degree is twice the mean streets per node, since
 each street flows both directions). The meshedness index is also highly correlated with
 the proportion of four-way intersections, suggesting this component is capturing the
@@ -22,9 +22,9 @@ width=90%}
 A second group of variables includes population, street length, cyclomatic number,
 and measures of street and intersection density. This component appears to measure the
 transportation graph's complexity and size. The component may also reveal something
-about agglomeration and self scaling, as the density measures appear to grow in tandem
+about agglomeration and self-scaling, as the density measures appear to grow in tandem
 with size. A final third apparent grouping of variables includes circuity, and the
-proportion of self loops, as well as three-way and dead-end intersections. This
+proportion of self-loops, as well as three-way and dead-end intersections. This
 component is strongly negatively correlated with the first and appears to indicate
 network clogging or stoppages. It is interesting to note that circuity is positively
 correlated with the proportion of dead-end end streets. Notably each of the three
@@ -66,6 +66,9 @@ strong intercorrelation structure of many variables of interest, and therefore m
 interpreted with caution. As such, we attempt to isolate the relationships among
 variables in the following section.
 
+<-- The previous paragraph seems out of place? -->
+
+
 ## Modeling the Difference Between Metrics
 
 To understand the importance of graph structure on the difference between segregation
@@ -74,6 +77,8 @@ segregation is a function of metropolitan network characteristics and population
 controls. We fit both frequentist and Bayesian model specifications, with the latter
 adopting weakly-informative priors using both the raw difference in segregation and the
 percent difference as the dependent variable [@capretto2022BambiSimple].
+
+<!-- Strike the Bayesian stuff -->
 
 $$
 \Delta = \alpha + \beta X + \epsilon
@@ -95,7 +100,5 @@ variables such as the share of proportions in different connectivity levels and 
 constructs well-captured by other variables (see @fig:heatmap), our preferred models
 include a subset of network topology measures and interactions between cyclomatic
 complexity and (1) meshedness (2) circuity. In all specifications, these interactions
-improved model fit significantly. Our Bayesian and frequentist specifications provide
-complimentary results and the relationships between variables are generally consistent
-regardless which dependent variable is used.
-
+significantly improved model fit. Moreover, the relationships between variables
+are generally consistent regardless which dependent variable is used.

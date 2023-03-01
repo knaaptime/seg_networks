@@ -90,7 +90,7 @@ connectivity in fostering social networks inside small urban geographic zones
 [@grannis1998ImportanceTrivial]. The natural logic underlying these findings is that street networks
 can help insulate urban environments and provide greater exposure to residents living inside "the
 neighborhood" than those who live outside, but this distinction can be masked easily when measuring
-metropolitan space using euclidean distances.
+metropolitan space using Euclidean distances.
 
 <div id='fig:network_distance'>
 ![Network Distance vs Euclidean Distance](figures/network_distance.png){#fig:distance_sd width=49%}
@@ -106,7 +106,7 @@ methods in the cities of San Clemente and Chicago. The small
 polygon depicts the total extent accessible from the origin point when traveling along the
 pedestrian network, whereas the larger polygon depicts the 1-mile buffer representing unconstrained
 travel. It is immediately apparent in the figure that network-constrained travel covers a much
-smaller footprint than euclidean distance in the depicted location. Furthermore, the pattern appears
+smaller footprint than Euclidean distance in the depicted location. Furthermore, the pattern appears
 to be influenced strongly by the street network and urban design features that characterize the
 largely suburban region of San Clemente.
 
@@ -139,7 +139,7 @@ also the geometric design and topological structure of the travel network that f
 separation between people in urban space. The curvilinear, meandering streets, and abundance of
 cul-de-sacs in San Clemente stand in sharp contrast to the dense, regular grid in Chicago, even
 though the network in Chicago also includes additional barriers like highways. In what follows, we
-examine the magnitude of differences between network and simple euclidean measures in detail for
+examine the magnitude of differences between network and simple Euclidean measures in detail for
 every metropolitan region in the United States. Specifically, we expand upon prior work in three
 different directions. First, we widen the geographic scope by considering every metropolitan region
 in the United States, rather than a case study of a single city. Second, we adopt a computational
