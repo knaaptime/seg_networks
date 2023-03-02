@@ -21,10 +21,10 @@ structure, and are described in @tbl:variables. In addition to simple measures l
 and density of streets, the count and density of intersections, and the proportion of intersections
 at different levels of throughput, we focus in particular on three measures of the graph structure:
 cyclomatic complexity, meshedness, and circuity. In theory, all three measures should be related to
-the observed difference in segregation when measured in network distance versus euclidean distance.
+the observed difference in segregation when measured in network distance versus Euclidean distance.
 All else equal, the difference should be smaller when: cycloymatic complexity and meshedness are
 higher, and when circuity is lower. Each of these conditions should, in theory, lead to greater flow
-along the network and a better approximation of unconstrained euclidean travel.
+along the network and a better approximation of unconstrained Euclidean travel.
 
 <!-- 
 To modify this table, edit the contents of data/network_variables.csv
@@ -69,11 +69,11 @@ expect that greater meshedness would result in lower $\Delta_{\tilde{H}}$ becaus
 results in a further potential travel distance.
 
 Circuity is a measure of the "windingness" of a city's streets. It is a ratio of an edge's network
-distance to the euclidean distance between its starting and ending nodes. In stylized terms, it
+distance to the Euclidean distance between its starting and ending nodes. In stylized terms, it
 represents the difference between walking between any two intersections and flying between them. For
 example, a mountain switchback trail would have a higher circuity measure than a flight of stairs
 that connected the same two origins and destinations. The former would be easier to traverse because
-of its less intense elevation, but the path would sacrifice greater distance traveled as a result.
+of its lesser slope, but the path would sacrifice greater distance traveled as a result.
 Here, our measure of circuity is the average taken over all edges in the network. All else equal, we
 would expect that a lower circuity measure would result in a lower $\Delta_{\tilde{H}}$ because
-network distance is closer to euclidean distance.
+network distance is closer to Euclidean distance.

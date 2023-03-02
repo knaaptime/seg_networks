@@ -21,14 +21,14 @@ resources, statistical literacy, and computational power, a wide variety of soci
 exploring more realistic methods for incorporating spatial relationships into their analyses. In
 fields like quantitative geography and spatial econometrics, this trend is revealed by the
 increasing focus on spatial weights matrices that represent space in formal models, and in sociology
-and human geography, the trend in segregation research is increasingly sophisticated concepts of the
+and human geography, the trend in segregation research is towards increasingly sophisticated concepts of the
 local neighborhood experienced by each resident.
 
 ## Incorporating Distance into Segregation Indices
 
 ### Making Space Explicit
 
-In a seminal contribution, @white1983MeasurementSpatial conceives of segregation in terms of spatial
+In a foundational contribution, @white1983MeasurementSpatial conceives of segregation in terms of spatial
 interaction, and formulates a spatial dissimilarity index using an exponential decay function to
 weight the proximity between observed census units. Despite the importance of the contribution, the
 application of White's technique has never become widespread, perhaps in part because of the
@@ -41,7 +41,7 @@ because geographic units are heterogenously-sized and also because polygon adjac
 measurement of "nearness". Additional work has explored the sensitivitiy of segregation measures to
 the modifiable areal unit problem (MAUP) [@openshaw1984EcologicalFallacies], and by extension, the
 importance of spatial scale [@wong1997SpatialDependency;@wong2004ComparingTraditional]. Some authors
-have also developed spatial extensions or deompositions of popular indices such as the Gini index
+have also developed spatial extensions or decompositions of popular indices such as the Gini index
 [@dawkins2004MeasuringSpatial;@rey2011ImpactSpatial]
 
 In a canonical contribution to the segregation literature, @reardon2004MeasuresSpatial develop a
@@ -51,7 +51,7 @@ isolation/exposure index $\tilde{P}^\ast$ have the most desirable conceptual and
 properties. @osullivan2007SurfaceBasedApproach provide an operationalization of this approach using
 kernel density estimation to operationalize the notion of the neighborhood in continuous space,
 overcoming many of the traditional criticisms of spatial segregation measures. In doing so, they
-provided an important path forward for a continuing body of work that has continued to expand the
+provided an important path forward for a body of work that has continued to expand the
 notion of space.
 
 ### Interrogating Spatial Scale
@@ -61,7 +61,7 @@ notion of space.
  implications of multiscalar segregation by varying the distance parameter used to compute the local
  environment in a spatial segregation index. Following, @reardon2009RaceSpace and
  @lee2008CensusTract apply the framework to a large set of metropolitan regions in the U.S.,
- demonstrating a wide variety of macro versus micro-scaled patterns and other work has explored the
+ demonstrating a wide variety of macro versus micro-scaled patterns, and other work has explored the
  role of multiscalar change over time [@bailey2012HowSpatial;@fowler2016SegregationMultiscalar].
  Another prominent body of work builds on this work, exploring the notion of "egohoods," where each
  household has its own concept of the neighborhood that extends outward and partially overlaps with
@@ -86,11 +86,11 @@ when measured according to network distance. These contributions emphasize a lon
 understudied element of metropolitan segregation patterns, namely that transport networks, physical
 barriers, and other factors such as elevation or congestion condition the expected potential for social
 interaction in space. For example work in sociology has shown the importance of street network
-connectivity in fostering connected social networks inside small urban geographic zones
+connectivity in fostering social networks inside small urban geographic zones
 [@grannis1998ImportanceTrivial]. The natural logic underlying these findings is that street networks
 can help insulate urban environments and provide greater exposure to residents living inside "the
 neighborhood" than those who live outside, but this distinction can be masked easily when measuring
-metropolitan space using euclidean distances.
+metropolitan space using Euclidean distances.
 
 <div id='fig:network_distance'>
 ![Network Distance vs Euclidean Distance](figures/network_distance.png){#fig:distance_sd width=49%}
@@ -101,11 +101,12 @@ Network Distance vs Euclidean Distance in Urban Environments
 
 A depiction of the difference between network travel distance and "as the crow flies" distance is
 shown in @fig:network_distance. The figure shows an origin marked with an X in the center, and two
-different polygons representing a one-mile travel distance using different methods. The small
+different polygons representing a one-mile travel distance using different
+methods in the cities of San Clemente and Chicago. The small
 polygon depicts the total extent accessible from the origin point when traveling along the
 pedestrian network, whereas the larger polygon depicts the 1-mile buffer representing unconstrained
 travel. It is immediately apparent in the figure that network-constrained travel covers a much
-smaller footprint than euclidean distance in the depicted location. Furthermore, the pattern appears
+smaller footprint than Euclidean distance in the depicted location. Furthermore, the pattern appears
 to be influenced strongly by the street network and urban design features that characterize the
 largely suburban region of San Clemente.
 
@@ -135,10 +136,10 @@ phenomena such as one group living on the "other side of the tracks"
 
 Further, as @fig:network_distance shows, it is not simply the presence of physical barriers, but
 also the geometric design and topological structure of the travel network that facilitates
-separation between people in urban space. The curvilinear, meandering streets and abundance of
+separation between people in urban space. The curvilinear, meandering streets, and abundance of
 cul-de-sacs in San Clemente stand in sharp contrast to the dense, regular grid in Chicago, even
 though the network in Chicago also includes additional barriers like highways. In what follows, we
-examine the magnitude of differences between network and simple euclidean measures in detail for
+examine the magnitude of differences between network and simple Euclidean measures in detail for
 every metropolitan region in the United States. Specifically, we expand upon prior work in three
 different directions. First, we widen the geographic scope by considering every metropolitan region
 in the United States, rather than a case study of a single city. Second, we adopt a computational

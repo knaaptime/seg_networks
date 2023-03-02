@@ -1,4 +1,3 @@
-<!-- Hook -->
 
 An exceedingly common abstraction in applied spatial analysis is the use of Euclidean distance as a
 proxy measure for geographic proximity (which is, itself, often a proxy for the frequency of social
@@ -93,5 +92,6 @@ widening the gap between analytical abstraction and empirical reality. More simp
 understand whether certain elements of the street network are associated with a greater difference
 in measured segregation. With this knowledge, urban designers and planners can begin with more
 inclusive communities from the beginning.
+
 
 [^spherical_cow]: <https://en.wikipedia.org/wiki/Spherical_cow>

@@ -4,21 +4,21 @@ In the segregation literature, the importance of *space* has long been recognize
 full grasp of its implications still eludes researchers. In this paper, we show that
 when considering the role of transportation infrastructure in segregation measurement,
 we obtain substantially different results than classic spatial approaches that adopt
-euclidean measurements. More specifically, we show that when ignoring the connectivity
+Euclidean measurements. More specifically, we show that when ignoring the connectivity
 of local travel networks, the spatial information theory index $\tilde{H}$ typically
 underestimates four-group racial segregation by approximately 20%. Using a computational
 inference framework, we show that this difference is not only substantively meaningful,
 but also that the difference is large enough that it is unlikely to result from a random
 process. Put differently, we show strong evidence that this bias is prevalent in a large
 share of cases. When examining all metropolitan CBSAs in the United States, between 14%
-and 25% of the areas show a statistically significant difference, depending on the
-$\alpha$ level. This result provides new insight into the importance of considering the
-built environment when conducting spatial analysis in general, and measuring
-segregation, in particular. By leveraging advances in both network routing algorithms
-and statistical methods, we analyze metropolitan regions in the United States at a
-massive scale, finding the shortest routes through billions of street intersections to
-provide concrete evidence of a widespread phenomenon first suggested by
-@roberto2018SpatialProximity.
+and 25% of the areas show a statistically significant difference. This result
+provides new insight into the importance of considering the built environment
+when conducting spatial analysis in general, and measuring segregation, in
+particular. By leveraging advances in both network routing algorithms and
+statistical methods, we analyze metropolitan regions in the United States at a
+massive scale, finding the shortest routes through millions of street
+intersections to provide concrete evidence of a widespread phenomenon first
+suggested by @roberto2018SpatialProximity.
 
 <!-- summarize graph measures result -->
 
@@ -38,6 +38,8 @@ and interconnected street grids that adopt straight edges and avoid circuitous p
 can help reduce the segregation measured in metro regions. Nevertheless, the significant
 interaction also suggests more research is necessary to fully understand the effects of
 heterogenous network patterns.
+
+<!-- Check the interaction result as I'm not seeing it in the modeling -->
 
 <!-- extensions -->
 

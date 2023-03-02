@@ -27,8 +27,10 @@ $W$, we are forced "to specify [our] underlying assumptions about socio-spatial 
 following the call by @reardon2004MeasuresSpatial [p.154] for analysis that "compares segregation
 levels based on different theoretical bases for defining spatial proximity." Conceptually, the
 spatial weights matrix $W$ reflects the connectivity graph for the spatial relationship between
-nodes $i$ and $j$, and the values $w_{ij}$ encode the intensity of the association $\bar{ij}$. Thus, the
-spatial weights matrix is a useful and flexible representation of the local neighborhood environment
+nodes $i$ and $j$, and the values $w_{ij}$ encode the intensity of the
+association $\bar{ij}$.
+<-- ELI check on what $\bar{ij}$ is intended to represent? -->
+The spatial weights matrix is a useful and flexible representation of the local neighborhood environment
 because it provides a generic data structure for encoding spatial relationships, where any link
 function ($\phi$, following the notation of @reardon2004MeasuresSpatial) can be used to specify the
 proximity between units. Formally,
@@ -38,6 +40,7 @@ $$
 W = \phi(D)
 $$ {#eq:weights}\
 where $\phi$ is a proximity weighting function and $D$ is a matrix containing pairwise distances for
+all
 $i$ and $j$. Classically, $W$ is typically created via binary connectivity between adjacent
 units, but a wide variety of other continuous specifications are also used in practice
 [@getis2009SpatialWeights;@rey2010PySALPython;@halleckvega2015SLXMODEL], such as the Euclidean
@@ -84,7 +87,8 @@ perform all calculations using the open-source Python package `segregation`
 
 ## Assessing Difference Between Distance Metrics
 
-To understand the implications of different parameterizations of space, we use data block group-level
+To understand the implications of different parameterizations of space, we use
+block group-level data
 from the US Census American Community Survey (ACS) 5-year sample (2013-2017) with four
 mutually-exclusive racial groups (non-Hispanic white, non-Hispanic Black, Hispanic, and Asian). Our
 sample contains data for 380 metropolitan Core Based Statistical Areas (CBSAs) in the United States.
@@ -129,7 +133,7 @@ metropolitan region in @eq:weights propagates the two constructs through
 [@eq:lag; @eq:proportion; @eq:density; @eq:entropy; @eq:sit], yielding two segregation measures
 $\tilde{H}_{net}$, $\tilde{H}_{euc}$ and, implicitly, a difference between the two,
 $\Delta_{\tilde{H}} = \tilde{H}_{net} - \tilde{H}_{euc}$. The relative difference between
-segregation measures is the difference divided by the Euclidean measure $\Delta_{pct} =
+segregation measures is the difference divided by the Euclidean measure: $\Delta_{pct} =
 \frac{\Delta_{\tilde{H}}}{\tilde{H}_{euc}}$.
 
 ### Inferential Framework
