@@ -13,7 +13,7 @@ Notably, by varying the $r$ parameter and recalculating the segregation indices
 presented here it is possible to generate a network-based version of the "multiscalar
 segregation profile" introduced by @reardon2008GeographicScale, which would provide
 additional insight into the way that networks may affect multiple scales. In
-@fig:multiscalar, we recreate a figure by @roberto2018SpatialProximity showing the
+@fig:multiscalar, we recreate a graph by @roberto2018SpatialProximity showing the
 network-based multiscalar profile for Pittsburgh, PA using our data and methodology.
 After the critical distance of about one kilometer (which provides travel outside a
 given blockgroup) the difference between network and Euclidean profiles is roughly
@@ -21,23 +21,21 @@ constant. Again, this initial exploration suggests our results are likely robust
 choice of $r$, but this finding should be subject to further scrutiny.
 
 
-![Network vs. Eucliden Multiscalar Segregation Profiles for Pittsburgh, PA]()
+![Network vs. Euclidean Multiscalar Segregation Profiles for Pittsburgh, PA](figures/pitt_example.png){#fig:multiscalar}
 
 There are also other ways researchers could partition or conceptualize the street
 network graph for further study. In this example, we include a simple set of graph-wide
 summary measures, e.g. meshedness, average degree, and circuity. These metrics could
-also be measured for different subgraphs (e.g. using the same distance threshold used to
-define $r$). Summarizing these measures and using them as input to the regression model
-would provide a different picture of the relationships; it would also facilitate the
-inclusion of other commonly used graph metrics, such as closeness centrality or
-betweenness centrality. The significant interaction effects we uncover between
-meshedness and cyclomatic complexity and circuity and complexity also suggest that this
-is a ripe avenue for further research. In these cases, the significant interaction
-effects are likely created by heterogeneity in large travel networks, and more refined
-measures of subgraphs (rather than aggregate summaries of the entire network) may help
-uncover important localized patterns.
-
-<!-- Check if the previous par matches what may have been dropped earlier -->
+also be measured for different "spatial scales" of the network, i.e. different subgraphs
+(e.g. using the same distance threshold used to define $r$). Summarizing these measures
+and using them as input to the regression model would provide a different picture of the
+relationships; it would also facilitate the inclusion of other commonly used graph
+metrics, such as closeness centrality or betweenness centrality. The significant
+interaction effects we uncover between meshedness and cyclomatic complexity and circuity
+and complexity also suggest that this is a ripe avenue for further research. In these
+cases, the significant interaction effects are likely created by heterogeneity in large
+travel networks, and more refined measures of subgraphs (rather than aggregate summaries
+of the entire network) may help uncover important localized patterns.
 
 There is also a second issue of spatial scale, which is that here we examine all
 relationships at a metropolitan scale. Because housing and labor markets are regional in

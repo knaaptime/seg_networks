@@ -148,16 +148,17 @@ metro region. As a result of this process, two "spatialized" versions of the met
 demographic composition are created, with one dataset representing Euclidean distances and the other
 representing network-based distances.
 
-We then create two synthetic datasets by pooling the input units from both original datasets and
-reassigning them at random. For each block-group, we randomly reassign the labels $(net,euc)$ to the
-observed spatial lags from @eq:lag. Once all units have been assigned to a group, the segregation
-measures are re-computed and their difference taken. This process is repeated 10,000 iterations. By
-comparing the observed difference in the two segregation measures against a distribution of
-differences generated via synthetic datasets, we can develop pseudo $p$-values based on a
-conventional $t$-test. Our test, in this case, adopts the null hypothesis that distances come from a common distribution and thus the expected difference in the segregation measures is 0.
- The pseudo-$p$ values represent probability that, under the null, a simulated difference is greater than
- than the observed difference
-$\Delta_{\tilde{H}}$.
+We then create two synthetic datasets by pooling the input units from both original
+datasets and reassigning them at random. For each block-group, we randomly reassign the
+labels $(net,euc)$ to the observed spatial lags from @eq:lag. Once all units have been
+assigned to a group, the segregation measures are re-computed and their difference
+taken. This process is repeated 10,000 iterations. By comparing the observed difference
+in the two segregation measures against a distribution of differences generated via
+synthetic datasets, we are able to develop inferential statistics using a conventional
+$t$-test. Our test, in this case, adopts the null hypothesis that distances come from a
+common distribution and thus the expected difference in the segregation measures is 0.
+The $p$ values represent probability that, under the null, a simulated difference is
+greater than than the observed difference $\Delta_{\tilde{H}}$.
 
 
 [^grannis]: Notably, however, a similar notation is used by @grannis2002DiscussionSegregation who

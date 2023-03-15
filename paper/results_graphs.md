@@ -66,19 +66,19 @@ strong intercorrelation structure of many variables of interest, and therefore m
 interpreted with caution. As such, we attempt to isolate the relationships among
 variables in the following section.
 
-<-- The previous paragraph seems out of place? -->
-
-
 ## Modeling the Difference Between Metrics
 
 To understand the importance of graph structure on the difference between segregation
 measurements we also fit a series of regression models in which the difference in
 segregation is a function of metropolitan network characteristics and population
-controls. We fit both frequentist and Bayesian model specifications, with the latter
-adopting weakly-informative priors using both the raw difference in segregation and the
-percent difference as the dependent variable [@capretto2022BambiSimple].
-
-<!-- Strike the Bayesian stuff -->
+controls. Two models are presented, where the dependent variable is either the observed
+difference between segregation measures, or the percent difference between the two.
+Because distance computation is the only systematic difference between the Euclidean and
+network-based segregation measures, we can reasonably interpret the coefficients from
+the regression as the "effects" of different network structure on the difference between
+measures. Note this does not suggest a causal interpretation of the effects of network
+structure on *segregation*, per se, but rather the effect of network configuration on
+the *calculation of the segregation index*.
 
 $$
 \Delta = \alpha + \beta X + \epsilon
@@ -86,19 +86,43 @@ $${#eq:diff_model}\
 where $\alpha$ is a constant, $X$ is a subset of the variables described in @tbl:variables, and
 $\epsilon$ is a vector of random errors. 
 
-<!-- the only change between input is the distance metric, so associations could have a causal interpretation? is that worth it? -->
 
-<!-- this table is ugly. It might be worth doing this in R instead -->
 !include tables/regression.md
 
-By adopting this full array of model specifications, we aim to provide as much insight into
-the data as possible and leverage the best metrics from both approaches; diagnostics
-from the frequentist models provide an overview of how much variance each model explains
-via familiar metrics like the $R^2$ statistic, whereas the Bayesian models provide
-extremely useful uncertainty estimates of other parameters. After removing collinear
-variables such as the share of proportions in different connectivity levels and other
-constructs well-captured by other variables (see @fig:heatmap), our preferred models
-include a subset of network topology measures and interactions between cyclomatic
-complexity and (1) meshedness (2) circuity. In all specifications, these interactions
-significantly improved model fit. Moreover, the relationships between variables
-are generally consistent regardless which dependent variable is used.
+After removing collinear variables such as the share of proportions in different
+connectivity levels and other constructs well-captured by other variables (see
+@fig:heatmap), our preferred models include a subset of network topology measures and
+interactions between cyclomatic complexity and (1) meshedness (2) circuity. In all
+specifications, these interactions significantly improved model fit. Moreover, the
+relationships between variables are generally consistent regardless which dependent
+variable is used. Right-hand side variables following a Normal distribution are
+z-transformed and those following a power distribution are transformed via natural
+logarithm.
+
+Regardless of the chosen dependent variable, the models display similar results, most of
+which are intuitive. Significant variables include the density of streets and street
+intersections, network circuity, and the two interaction terms. As expected, the
+coefficient for intersection density is negative, suggesting that as the number of
+intersections per kilometer increases the gap between Euclidean and network-based
+segregation indices falls. This comports with intuition as greater intersection density
+leads to a network with greater ability to change direction, and thus a better
+approximation of unconstrained travel. Circuity is also positive and significant,
+suggesting that as streets get more winding and curvilinear, the distance between
+segregation indices grows. However, the interaction between cyclomatic complexity (a
+measure of redundancy in the network) and circuity is negative, which suggests that as
+the network offers more possible routes between an origin and destination, the effect of
+circuity falls. Again, this result is intuitive, as increased cyclomatic complexity
+offers more opportunities for short-cutting through a circuitous network.
+
+One counterintuitive result is the weakly significant and positive coefficient for
+network meshedness. Taken at face value, this would suggest that networks with a regular
+grid pattern increase the distance between segregation measured on the network versus
+the same data measured on a plane. One possible explanation for this result is an
+inability of this relatively simple model to account for multiple interactions between
+meshedness, density, and complexity. While it is possible for a street network to have
+high intersection density, high street density, and low meshedness (such as a dense but
+highly dendritic subdivision) such networks are likely comparatively rare in major
+cities (or are difficult to capture at a metropolitan scale). In such a situation, some
+variation attributable to meshedness may instead be consumed by the competing
+coefficients for street density and network density. Exploring the complexity of these
+relationships is an important avenue for further work.

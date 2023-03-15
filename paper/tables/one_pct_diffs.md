@@ -4,7 +4,7 @@
 \resizebox{\linewidth}{!}{
 \begin{tabular}{lrrrrr}
 \hline
- name                                         &       \$	ilde\{H\}\_\{net\}\$ &       \$	ilde\{H\}\_\{euc\}\$ &       \$\textbackslash{}Delta\_\{	ilde\{H\}\}\$ &   \$\textbackslash{}Delta\_\{pct\}\$ &   \$pseudo-p\$ \\
+ name                                         &       \$	ilde\{H\}\_\{net\}\$ &       \$	ilde\{H\}\_\{euc\}\$ &       \$\textbackslash{}Delta\_\{	ilde\{H\}\}\$ &   \$\textbackslash{}Delta\_\{pct\}\$ &   \$p-value\$ \\
 \hline
  Anchorage, AK                                & 0.135 & 0.092 & 0.043 &            0.47  &        0.002 \\
  Atlanta-Sandy Springs-Alpharetta, GA         & 0.321 & 0.293 & 0.028 &            0.095 &        0.001 \\
