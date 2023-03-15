@@ -30,14 +30,11 @@ intercorrelated, and only a few metrics are necessary for capturing a reasonable
 of the large-scale graph structure. Following, we find that the most important
 characteristics in the network are intersection density, which reduces the difference
 between network and Euclidean measurements, and the circuity of the street network,
-which increases the difference. Critically, the network measures also have significant
-interaction effects, showing that the relationship between circuity and segregation
-differences is attenuated by the network size, with smaller networks being impacted
-less. Together these findings suggest that network design decisions like ensuring dense
-and interconnected street grids that adopt straight edges and avoid circuitous patterns
-can help reduce the segregation measured in metro regions. Nevertheless, the significant
-interaction also suggests more research is necessary to fully understand the effects of
-heterogenous network patterns.
+which increases the difference. Together these findings suggest that network design
+decisions like ensuring dense and interconnected street grids that adopt straight edges
+and avoid circuitous patterns can help reduce the segregation measured in metro regions.
+Nevertheless, the significant interaction effects in the models also suggest more
+research is necessary to fully understand the effects of heterogenous network patterns.
 
 <!-- Check the interaction result as I'm not seeing it in the modeling -->
 
