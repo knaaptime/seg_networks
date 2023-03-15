@@ -22,18 +22,17 @@ connection can help ease interdisciplinary adoption and conversation around spat
 measures.
 
 Thus, we index locations as $i$ and $j$, and we operationalize the concept of spatial
-relationships using a spatial weights matrix $W$ [@cliff1970SpatialAutocorrelation]. By focusing on
-$W$, we are forced "to specify [our] underlying assumptions about socio-spatial proximity",
-following the call by @reardon2004MeasuresSpatial [p.154] for analysis that "compares segregation
-levels based on different theoretical bases for defining spatial proximity." Conceptually, the
-spatial weights matrix $W$ reflects the connectivity graph for the spatial relationship between
-nodes $i$ and $j$, and the values $w_{ij}$ encode the intensity of the
-association $\bar{ij}$.
-<-- ELI check on what $\bar{ij}$ is intended to represent? -->
-The spatial weights matrix is a useful and flexible representation of the local neighborhood environment
-because it provides a generic data structure for encoding spatial relationships, where any link
-function ($\phi$, following the notation of @reardon2004MeasuresSpatial) can be used to specify the
-proximity between units. Formally,
+relationships using a spatial weights matrix $W$ [@cliff1970SpatialAutocorrelation]. By
+focusing on $W$, we are forced "to specify [our] underlying assumptions about
+socio-spatial proximity", following the call by @reardon2004MeasuresSpatial [p.154] for
+analysis that "compares segregation levels based on different theoretical bases for
+defining spatial proximity." Conceptually, the spatial weights matrix $W$ reflects the
+connectivity graph for the spatial relationship between nodes $i$ and $j$, and the
+values $w_{ij}$ encode the intensity of the association $\bar{ij}$. The spatial weights
+matrix is a useful and flexible representation of the local neighborhood environment
+because it provides a generic data structure for encoding spatial relationships, where
+any link function ($\phi$, following the notation of @reardon2004MeasuresSpatial) can be
+used to specify the proximity between units. Formally,
 
 <!-- if we're following reardon's notation, does $D$ below need to be $R$ ? -->
 $$

@@ -2,12 +2,12 @@
 \caption{CBSAs with Highly Significant $\Delta_{\tilde{H}}$}
 \label{tbl:one_pct_diffs}\\
 \toprule
-                                        name &  $\tilde{H}_{net}$ &  $\tilde{H}_{euc}$ &  $\Delta_{\tilde{H}}$ &  $\Delta_{pct}$ &  pseudo-$p$ \\
+                                        name &  $\tilde{H}_{net}$ &  $\tilde{H}_{euc}$ &  $\Delta_{\tilde{H}}$ &  $\Delta_{pct}$ &  $p$ value \\
 \midrule
 \endfirsthead
 \caption[]{CBSAs with Highly Significant $\Delta_{\tilde{H}}$} \\
 \toprule
-                                        name &  $\tilde{H}_{net}$ &  $\tilde{H}_{euc}$ &  $\Delta_{\tilde{H}}$ &  $\Delta_{pct}$ &  pseudo-$p$ \\
+                                        name &  $\tilde{H}_{net}$ &  $\tilde{H}_{euc}$ &  $\Delta_{\tilde{H}}$ &  $\Delta_{pct}$ &  $p$ value \\
 \midrule
 \endhead
 \midrule

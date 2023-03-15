@@ -19,11 +19,11 @@ geometry: margin=1in
 fontsize: 10pt # for fancy_article use 11
 # these do not work for fancy_article
 sansitup: True
-thanks: "This work is supported by NSF-SES Grant 1831615"
-anonymous: False
+#thanks: "This work is supported by NSF-SES Grant 1831615"
+anonymous: True
 header-includes:  | #[]  # additional latex pkgs if necessary
   \usepackage{longtable}
-
+  \usepackage{lineno}
 ---
 
 
