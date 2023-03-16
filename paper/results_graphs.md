@@ -1,20 +1,17 @@
 
 ## Graph Topology and Segregation Differences
 
-To understand how urban design decisions such as the topology of the travel network may
-impact the ability for residents to interact (as measured by the segregation index), we
-begin with an exploration of correlation among different variables that characterize the
-graph topological structure, as well as the correlation between $\Delta_{\tilde{H}}$ and
-network structure. @fig:heatmap shows a "clustermap" of the network topology measures,
-where the correlation matrix is shaded with green hues to indicate a positive
-relationship and purple hues to indicate a negative relationship, with the intensity
-denoting the level of correlation. Here, it is clear that some network metrics are
-capturing the same concept, for example the gamma index is perfectly collinear with the
-average node degree (k_avg), streets per node, and meshedness (given the symmetric nature
-of the pedestrian network, the average degree is twice the mean streets per node, since
-each street flows both directions). The meshedness index is also highly correlated with
-the proportion of four-way intersections, suggesting this component is capturing the
-network's throughput.
+We begin with an exploration of correlation among different variables that characterize
+the graph topological structure, as well as the correlation between $\Delta_{\tilde{H}}$
+and network structure. @fig:heatmap shows a "clustermap" of the network topology
+measures, where the correlation matrix is shaded with green hues indicating positive
+relationships with purple hues indicating negative relationships, and the intensity
+denoting the level of correlation. Some network metrics clearly capture the same
+concept; for example the gamma index is perfectly collinear with the average node degree
+(k_avg), streets per node, and meshedness (given the symmetric nature of the pedestrian
+network, the average degree is twice the mean streets per node, since each street flows
+both directions). The meshedness index is also highly correlated with the proportion of
+four-way intersections, suggesting this component is capturing the network's throughput.
 
 ![Clustermap of Correlation Structure in Network Metrics](figures/clustermap.png){#fig:heatmap
 width=90%}
@@ -31,8 +28,6 @@ correlated with the proportion of dead-end end streets. Notably each of the thre
 measures under study (cyclomatic complexity, meshedness, and circuity) each belong to a
 different component, suggesting that our chosen variables each represent a distinct part
 of the network structure.
-
-![Correlates of $\Delta_{\tilde{H}}$](figures/correlations.png){#fig:correlations width=90%}
 
 @fig:correlations portrays the pairwise correlations between the percentage difference
 in the two segregation measures and different properties of the networks in each of the
@@ -51,7 +46,7 @@ segregation in the city.
 <!-- I can drop some of the measures such as p-value, but for the ones
 to keep, i'm unclear what all the properties are. Maybe these should
 be defined above in the methods section and then I can refer to them
-here in the narrative -->
+here in the narrative 
 
 Our results demonstrate that the two-value test presented in the previous section is
 performing well by distinguishing a real difference between the two measurement
@@ -65,21 +60,26 @@ While informative, these bivariate associations can be difficult to interpret, g
 strong intercorrelation structure of many variables of interest, and therefore must be
 interpreted with caution. As such, we attempt to isolate the relationships among
 variables in the following section.
+-->
 
 ## Modeling the Difference Between Metrics
 
 To understand the importance of graph structure on the difference between segregation
-measurements we also fit a series of regression models in which the difference in
+measurements we also fit a series of regression models where the difference in
 segregation is a function of metropolitan network characteristics and population
 controls. Two models are presented, where the dependent variable $\Delta$ is either the
 observed difference between segregation measures, or the percent difference between the
-two. Because distance computation is the only systematic difference between the
+two.
+
+<!--
+Because distance computation is the only systematic difference between the
 Euclidean and network-based segregation measures, we can reasonably interpret the
 coefficients from the regression as the "effects" of different network structure on the
 difference between measures, given the usual caveats about potential omitted variable
 bias. Note this does not suggest a causal interpretation of the effects of network
 structure on *segregation*, per se, but rather the effect of network configuration on
 the *calculation of the segregation index*.
+-->
 
 $$
 \Delta = \alpha + \beta X + \epsilon

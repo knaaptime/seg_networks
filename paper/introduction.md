@@ -60,8 +60,6 @@ articulated by @perry1929neighborhood, large scale developers like James Rouse d
 for new towns like Columbia, Maryland that were based largely on the design of insular street
 networks [@olsen2003BetterPlaces].
 
-![The "Neighborhood Unit", Source: @perry1929neighborhood](figures/perry_neighborhood_unit.png){#fig:nup width=85%}
-
 At their best, these designs were intended to foster community for the residents that live within
 them, and ensure that amenities like school, shopping, employment, and leisure are all within a
 walkable distance from the neighborhood's core. From a more cynical perspective, the cul-de-sac

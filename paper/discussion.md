@@ -20,9 +20,6 @@ given blockgroup) the difference between network and Euclidean profiles is rough
 constant. Again, this initial exploration suggests our results are likely robust to
 choice of $r$, but this finding should be subject to further scrutiny.
 
-
-![Network vs. Euclidean Multiscalar Segregation Profiles for Pittsburgh, PA](figures/pitt_example.png){#fig:multiscalar}
-
 There are also other ways researchers could partition or conceptualize the street
 network graph for further study. In this example, we include a simple set of graph-wide
 summary measures, e.g. meshedness, average degree, and circuity. These metrics could
