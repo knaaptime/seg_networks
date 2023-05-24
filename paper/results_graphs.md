@@ -69,7 +69,7 @@ measurements we also fit a series of regression models where the difference in
 segregation is a function of metropolitan network characteristics and population
 controls. Two models are presented, where the dependent variable $\Delta$ is either the
 observed difference between segregation measures, or the percent difference between the
-two.
+two:
 
 <!--
 Because distance computation is the only systematic difference between the

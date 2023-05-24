@@ -18,3 +18,8 @@ Network vs. Euclidean-based Segregation Indices
 
 
 ![Network vs. Euclidean Multiscalar Segregation Profiles for Pittsburgh, PA](figures/pitt_example.png){#fig:multiscalar}
+
+
+![Planar vs. Network Segregation Rankings](figures/ranks.png){#fig:ranks
+width=90%}
+
