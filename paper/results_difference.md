@@ -11,8 +11,10 @@ correlation* between the two measures is considerably lower at $\tau=0.90$.
 Substantively, this means that an analysis of segregated metropolitan regions will
 result in different conclusions regarding the "most segregated" places, depending on
 which distance measure is employed. A visual comparison of the top 15 most segregated
-metros is provided in @fig:ranks in the supplementary material, which shows how
-different places exchange ranks.
+metros is provided in @fig:ranks, demonstrating how different places exchange ranks.
+
+![Planar vs. Network Segregation Rankings](figures/ranks.png){#fig:ranks
+width=90%}
 
 In all but four cases, segregation is higher in each metropolitan region when measured
 according to network distance than by pure Euclidean distance[^CRS] (none of the four

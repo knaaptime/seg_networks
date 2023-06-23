@@ -9,7 +9,9 @@ of local travel networks, the spatial information theory index $\tilde{H}$ typic
 underestimates four-group racial segregation by approximately 20%. Using a computational
 inference framework, we show that this difference is not only substantively meaningful,
 but also that the difference is large enough that it is unlikely to result from a random
-process. Put differently, we show strong evidence that this bias is prevalent in a large
+process. 
+
+Put differently, we show strong evidence that this bias is prevalent in a large
 share of cases. When examining all metropolitan CBSAs in the United States, between 14%
 and 25% of the areas show a statistically significant difference. This result
 provides new insight into the importance of considering the built environment
@@ -52,7 +54,10 @@ sidewalks and footpaths included in OSM. Similarly, the travel network could als
 extended to include public transportation or (potentially congested) automobile travel.
 These considerations would require extensive additional data, which may limit the
 capacity for cross-sectional comparisons, but would also provide insight into
-alternative concepts of space and distance.
+alternative concepts of space and distance. They would also provide additional
+robustness checks against the results here to understand whether the same relationships
+hold for transit and automobile network, which have considerably different graph
+properties [@boeing2018MorphologyCircuity].
 
 Another important avenue for further work is the blending of multiple graphs for a more
 complete understanding of multi-contextual segregation. For example children who live in
