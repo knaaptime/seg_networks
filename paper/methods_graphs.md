@@ -16,22 +16,26 @@ topology metrics to explain the variation we observe in $\Delta_{\tilde{H}}$.
 
 We use the Python packages OSMNx [@boeing2016OSMnxNew] and Momepy
 [@fleischmann2019MomepyUrban] to create measures of the pedestrian travel network
-collected from OpenStreetMap. Together, these measures provide an overall summary of the
-morphophological properties of the travel graph structure, and are described in
-@tbl:variables, where $e$ indexes edges/streets and $v$ indexes nodes/intersections
-inside a region $r$. In addition to simple measures like the total length and density of
-streets, the count and density of intersections, and the proportion of intersections at
-different levels of throughput, we focus in particular on three measures of the graph
-structure: cyclomatic complexity, meshedness, and circuity. In theory, all three
-measures should be related to the observed difference in segregation when measured in
-network distance versus Euclidean distance. All else equal, the difference should be
-smaller when: cycloymatic complexity and meshedness are higher, and when circuity is
-lower. Each of these conditions should, in theory, lead to greater flow along the
-network and a better approximation of unconstrained Euclidean travel.
+collected from OpenStreetMap. The "pedestrian network" includes all paths that are
+available to pedestrians (including pathways) but could exclude some unofficial trails
+or commonly-used passages
+^[For a complete list of tags used to query the overpass API, see the osmnet software package <https://github.com/UDST/osmnet>]
+Together, these measures provide an overall summary of the morphophological properties
+of the travel graph structure, and are described in @tbl:variables, where $e$ indexes
+edges/streets and $v$ indexes nodes/intersections inside a region $r$. In addition to
+simple measures like the total length and density of streets, the count and density of
+intersections, and the proportion of intersections at different levels of throughput, we
+focus in particular on three measures of the graph structure: cyclomatic complexity,
+meshedness, and circuity. In theory, all three measures should be related to the
+observed difference in segregation when measured in network distance versus Euclidean
+distance. All else equal, the difference should be smaller when: cycloymatic complexity
+and meshedness are higher, and when circuity is lower. Each of these conditions should,
+in theory, lead to greater flow along the network and a better approximation of
+unconstrained Euclidean travel.
 
 <!-- 
 To modify this table, edit the contents of data/network_variables.csv
-then, generate the latex by running notebooks/model_difference.ipynb
+then, generate the latex by running ~~notebooks/model_difference.ipynb~~
 -->
 
 !include tables/variables_test.md
