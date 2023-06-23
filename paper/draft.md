@@ -13,7 +13,7 @@ abstract: >-
 keywords: "segregation, neighborhoods, spatial analysis, network analysis, spatial weights" 
 bibliography: "paper-seg_networks.bib"
 crossrefYaml: .pandoc/crossref_opts.yaml
-csl: .pandoc/csl/sage-harvard.csl
+csl: .pandoc/csl/apa-custom.csl
 linestretch: 1.4 # for fancy_article use 1.25
 geometry: margin=1in
 fontsize: 10pt # for fancy_article use 11
