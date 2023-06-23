@@ -36,7 +36,7 @@ which increases the difference. Together these findings suggest that network des
 decisions like ensuring dense and interconnected street grids that adopt straight edges
 and avoid circuitous patterns can help reduce the segregation measured in metro regions.
 Nevertheless, the significant interaction effects in the models also suggest more
-research is necessary to fully understand the effects of heterogenous network patterns.
+research is necessary to fully understand the effects of heterogeneous network patterns.
 
 <!-- Check the interaction result as I'm not seeing it in the modeling -->
 

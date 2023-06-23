@@ -71,16 +71,6 @@ controls. Two models are presented, where the dependent variable $\Delta$ is eit
 observed difference between segregation measures, or the percent difference between the
 two:
 
-<!--
-Because distance computation is the only systematic difference between the
-Euclidean and network-based segregation measures, we can reasonably interpret the
-coefficients from the regression as the "effects" of different network structure on the
-difference between measures, given the usual caveats about potential omitted variable
-bias. Note this does not suggest a causal interpretation of the effects of network
-structure on *segregation*, per se, but rather the effect of network configuration on
-the *calculation of the segregation index*.
--->
-
 $$
 \Delta = \alpha + \beta X + \epsilon
 $${#eq:diff_model}\

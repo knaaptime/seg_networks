@@ -67,7 +67,7 @@ metropolitan space using Euclidean distances.
 ![Distance Comparison in San Clemente](figures/network_distance.png){#fig:distance_sd width=40%}
 ![Distance Comparison in Chicago](figures/network_distance_chi.png){#fig:distance_chi width=40%}
 
-![Distance Comparison in Cleveland](figures/network_distance_cleveland.png){#fig:distance_cleveland width=40%}
+![Distance Comparison in Flint](figures/network_distance_flint.png){#fig:distance_flint width=40%}
 ![Distance Comparison in Portland](figures/network_distance_portland.png){#fig:distance_port width=40%}
 
 ![Distance Comparison in Miami](figures/network_distance_miami.png){#fig:distance_miami width=40%}
