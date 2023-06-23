@@ -29,19 +29,19 @@ measures under study (cyclomatic complexity, meshedness, and circuity) each belo
 different component, suggesting that our chosen variables each represent a distinct part
 of the network structure.
 
-@fig:correlations portrays the pairwise correlations between the percentage difference
-in the two segregation measures and different properties of the networks in each of the
-CBSAs. The strongest correlation is between the percentage difference and the size of
-the difference in segregation. This indicates that the percentage differences are not an
-artifact of a small denominator problem, whereby low levels of planar segregation would
-result in even small differences between network and planar based segregation to appear
-to be large. Focusing on the network properties, as the proportion of 4-way
-intersections increases the difference between segregation measured using network and
-planar distances grows. Segregation differences also grow with the average node
-incidence, street length, edge length, and circuity of the network. In general, as the
-size of the network increases, the difference in the segregation measures decreases. The
-relative differences in segregation measures are negatively associated with the level of
-segregation in the city.
+@fig:correlations in the supplementary material portrays the pairwise correlations
+between the percentage difference in the two segregation measures and different
+properties of the networks in each of the CBSAs. The strongest correlation is between
+the percentage difference and the size of the difference in segregation. This indicates
+that the percentage differences are not an artifact of a small denominator problem,
+whereby low levels of planar segregation would result in even small differences between
+network and planar based segregation to appear to be large. Focusing on the network
+properties, as the proportion of 4-way intersections increases the difference between
+segregation measured using network and planar distances grows. Segregation differences
+also grow with the average node incidence, street length, edge length, and circuity of
+the network. In general, as the size of the network increases, the difference in the
+segregation measures decreases. The relative differences in segregation measures are
+negatively associated with the level of segregation in the city.
 
 <!-- I can drop some of the measures such as p-value, but for the ones
 to keep, i'm unclear what all the properties are. Maybe these should
@@ -86,7 +86,6 @@ $$
 $${#eq:diff_model}\
 where $\alpha$ is a constant, $X$ is a subset of the variables described in @tbl:variables, and
 $\epsilon$ is a vector of random errors. 
-
 
 !include tables/regression.md
 

@@ -64,8 +64,14 @@ neighborhood" than those who live outside, but this distinction can be masked ea
 metropolitan space using Euclidean distances.
 
 <div id='fig:network_distance'>
-![Network Distance vs Euclidean Distance](figures/network_distance.png){#fig:distance_sd width=49%}
-![Network Distance vs Euclidean Distance](figures/network_distance_chi.png){#fig:distance_chi width=49%}
+![Distance Comparison in San Clemente](figures/network_distance.png){#fig:distance_sd width=40%}
+![Distance Comparison in Chicago](figures/network_distance_chi.png){#fig:distance_chi width=40%}
+
+![Distance Comparison in Cleveland](figures/network_distance_cleveland.png){#fig:distance_cleveland width=40%}
+![Distance Comparison in Portland](figures/network_distance_portland.png){#fig:distance_port width=40%}
+
+![Distance Comparison in Miami](figures/network_distance_miami.png){#fig:distance_miami width=40%}
+![Distance Comparison in St Louis](figures/network_distance_stl.png){#fig:distance_stl width=40%}
 
 Network Distance vs Euclidean Distance in Urban Environments
 </div>

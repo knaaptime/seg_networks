@@ -22,4 +22,3 @@ Network vs. Euclidean-based Segregation Indices
 
 ![Planar vs. Network Segregation Rankings](figures/ranks.png){#fig:ranks
 width=90%}
-

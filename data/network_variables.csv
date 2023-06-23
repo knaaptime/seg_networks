@@ -1,18 +1,18 @@
-﻿variable,category,description
-streets_per_node_avg,edge,average streets per node
-street_length_total,edge,total length (meters) of streets in graph
-street_segment_count,edge,count of street segments in graph
-street_length_avg,edge,mean street length
-street_density_km,edge,street density (per km)
-self_loop_proportion,edge,A self-loop is defined as an edge from node u to node v where u equals v.
-circuity_avg,edge,Sum of edge lengths divided by the sum of straight-line distances between edge endpoints
-intersection_count,node,total nodes divided by total intersections
-intersection_density_km,node,nodes divided by intersections per km
-node_props_dead_end,network,proportion of nodes ending in dead end
-k_avg,network,average node degree
-node_props_3way,network,proprotion of 3-way intersections
-node_props_4way,network,proportion of 4-way intersections
-cyclomatic,network,"the number of primary loops in the network. The greater the number of loops, the greater the number of possible routes in the city"
-meshedness,network,ratio of the number of faces in the network to the maximum possible number of loops in an equivalent network with the same number nodes
-edge_node_ratio,network,ratio of streets to intersections
-gamma,network,number of edges divided divided by 3 times (nodes minus 2) 
+﻿variable,category,description,formula
+streets_per_node_avg,edge,Average streets per node,$\frac{n_e}{n_v}$
+street_length_total,edge,Total length (meters) of streets in graph,$\sum^E{\mathbf{length}(e)}$
+street_segment_count,edge,Count of street segments in graph,$n_e$
+street_length_avg,edge,Average  street length,$\frac{\sum^e{\mathbf{length}_e}}{n_e}$
+street_density_km,edge,Street density (per km),$\frac{n_e}{\sum{\mathbf{sqmi}_r}}$
+self_loop_proportion,edge,Proportion of edges where node u to node v where u equals v,"$\frac{ \vert E_{self} \vert }{n_e},  E_{self}= \{e\in r \mid e_{uv}=e_{vu}\}$"
+circuity_avg,edge,Ratio of edge lengths to straight-line distances between edge endpoints,"$\frac{ \sum^E{\mathbf{length}(e_{uv}) }}{\sum^E{\mathbf{distance}(e_u, e_v)}}$"
+intersection_count,node,Total Intersections in the graph,$n_v$
+intersection_density_km,node,Total Intersections per km,$\frac{n_v}{\sum{\mathbf{sqmi}_r}}$
+node_props_dead_end,network,Proportion of nodes ending in dead end,"$\frac{ \vert V_1 \vert }{n_v},  V_1= \{v\in r \mid \mathbf{degree}(v)=1 \}$"
+k_avg,network,Average node degree,$\frac{\sum^V{\mathbf{degree}(v)}  }{n_v}$
+node_props_3way,network,Proprotion of 3-way intersections,"$\frac{ \vert V_3 \ \vert }{n_v},  V_3= \{v\in r \mid \mathbf{degree}(v)=3 \}$"
+node_props_4way,network,Proportion of 4-way intersections,"$\frac{ \vert V_4 \vert }{n_v},  V_4= \{v\in r \mid \mathbf{degree}(v)=4 \}$"
+cyclomatic,network,Number of primary loops in the network.,$e-v+1$
+meshedness,network,Ratio of faces in the network to the max possible loops in an equivalent network,$\frac{e-v+1}{2v-5}$
+edge_node_ratio,network,Ratio of streets to intersections,$\frac{n_e}{n_v}$
+gamma,network,Number of edges divided divided by 3 times (nodes minus 2) ,$\frac{e}{3(v-2)} $

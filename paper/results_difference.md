@@ -1,20 +1,29 @@
 ## Network Distance is an Important Consideration
 
 @fig:scatter portrays the relationship between segregation measured using the two
-different distance metrics for the sample CBSAs. Although the correlation between planar
-and network based segregation measures is $\rho=0.987$, our results provide clear
-evidence that the choice of appropriate distance metric plays an important role in the
-computation of a spatial segregation index. In all but four cases, segregation is higher
-when measured according to network distance than by pure Euclidean distance[^CRS] (none
-of the four cases are significantly different from a random pooling of the same data).
-Among the 380 CBAs in our dataset, 25.3% have a difference between Euclidean and
-network-based segregation measures that is significant at the $\alpha=0.05$ level, and
-14.2% of the CBSAs are significant at the $\alpha=0.01$ level. Descriptive statistics of
-the differences between segregation measures in each metro are shown in
+different distance metrics for the sample CBSAs. Although the Pearson correlation
+between planar and network based segregation measures is $\rho=0.987$, our results
+provide clear evidence that the choice of appropriate distance metric plays an important
+role in the computation of a spatial segregation index. We highlight this result using
+the fact that applied segregation research often uses ordinal rankings to describe and
+compare the magnitude of segregation across a set of places. While still high, the *rank
+correlation* between the two measures is considerably lower at $\tau=0.90$.
+Substantively, this means that an analysis of segregated metropolitan regions will
+result in different conclusions regarding the "most segregated" places, depending on
+which distance measure is employed. A visual comparison of the top 15 most segregated
+metros is provided in @fig:ranks in the supplementary material, which shows how
+different places exchange ranks.
+
+In all but four cases, segregation is higher in each metropolitan region when measured
+according to network distance than by pure Euclidean distance[^CRS] (none of the four
+cases are significantly different from a random pooling of the same data). Among the 380
+CBAs in our dataset, 25.3% have a difference between Euclidean and network-based
+segregation measures that is significant at the $\alpha=0.05$ level, and 14.2% of the
+CBSAs are significant at the $\alpha=0.01$ level. Descriptive statistics of the
+differences between segregation measures in each metro are shown in
 @tbl:diff_descriptives, and a list of the 54 CBSAs significant at the one percent level
 are listed in @tbl:one_pct_diffs. Among these 54 CBAS, eight metros are located in
 California--twice the number of the next-most prevalent state (Texas).
-
 
 !include tables/difference_descriptives_pandas.md
 

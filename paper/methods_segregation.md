@@ -79,7 +79,13 @@ where $M$ indicates the number of groups in the population. Finally,
 $$
 \tilde{H} = 1-\frac{1}{TE} \sum^I \tilde{\tau_i}\tilde{E}_i
 $$ {#eq:sit}\
-where $\tilde{H}$ is the spatial information theory index defined by @reardon2004MeasuresSpatial. We
+where $\tilde{H}$ is the spatial information theory index defined by @reardon2004MeasuresSpatial, $T$ is the total population of the region, and $E$ is the entropy of the region's total population
+
+$$
+E = -\sum^M_{m=1}(\pi_m)log_M(\pi_m)
+$$ {#eq:overall_entropy}
+
+. We
 perform all calculations using the open-source Python package `segregation`
 [@cortes2020OpensourceFramework], distributed as part of the Python Spatial Analysis Library (PySAL)
 [@rey2021PySALEcosystem]

@@ -46,11 +46,13 @@ shortest-path distances along the travel network. In the present study, we assum
 constant rate of travel consistent with the average walking pace, and that impedance is
 reflected by graph distance alone. Alternative constructs could include elevation along
 with distance to get a more complete measure of the effort required to traverse by foot
-or bicycle. Similarly, the travel network could also be extended to include public
-transportation or (potentially congested) automobile travel. These considerations would
-require extensive additional data, which may limit the capacity for cross-sectional
-comparisons, but would also provide insight into alternative concepts of space and
-distance.
+or bicycle. Future work could also examine the impacts of other ways to conceive of the
+"pedestrian" network structure, such as including parks, paths, and trails rather than
+sidewalks and footpaths included in OSM. Similarly, the travel network could also be
+extended to include public transportation or (potentially congested) automobile travel.
+These considerations would require extensive additional data, which may limit the
+capacity for cross-sectional comparisons, but would also provide insight into
+alternative concepts of space and distance.
 
 Another important avenue for further work is the blending of multiple graphs for a more
 complete understanding of multi-contextual segregation. For example children who live in
