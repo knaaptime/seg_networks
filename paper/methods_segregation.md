@@ -82,10 +82,10 @@ $$ {#eq:sit}\
 where $\tilde{H}$ is the spatial information theory index defined by @reardon2004MeasuresSpatial, $T$ is the total population of the region, and $E$ is the entropy of the region's total population
 
 $$
-E = -\sum^M_{m=1}(\pi_m)log_M(\pi_m)
+E = -\sum^M_{m=1}(\pi_m)log_M(\pi_m).
 $$ {#eq:overall_entropy}
 
-. We
+We
 perform all calculations using the open-source Python package `segregation`
 [@cortes2020OpensourceFramework], distributed as part of the Python Spatial Analysis Library (PySAL)
 [@rey2021PySALEcosystem]
