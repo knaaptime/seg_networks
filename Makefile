@@ -65,14 +65,21 @@ docx:
 tex:
 	@source "$(CONDA_BASE)/bin/activate" $(CONDA_ENVIRONMENT);\
 	cd paper;\
-	pandoc $(SRC) -r markdown+simple_tables+table_captions+yaml_metadata_block+smart -w latex -s --pdf-engine=tectonic --template=.pandoc/simple_article.template --filter pandoc-include --filter pandoc-crossref --filter pandoc-latex-admonition --natbib -o compiled/$(PROJECT_NAME).tex;
+	pandoc $(SRC) -r markdown+simple_tables+table_captions+yaml_metadata_block+smart -w latex -s --pdf-engine=tectonic --template=.pandoc/simple_article.template --filter pandoc-include --filter pandoc-crossref --filter pandoc-latex-admonition --citeproc -o compiled/$(PROJECT_NAME).tex;
+
+appendix:
+	@source "$(CONDA_BASE)/bin/activate" $(CONDA_ENVIRONMENT);\
+	cd paper;\
+	pandoc appendix.md -r markdown+simple_tables+table_captions+yaml_metadata_block+smart -w latex  --filter pandoc-include --filter pandoc-crossref --filter pandoc-latex-admonition --citeproc  -s -o compiled/appendix.tex;\
+	pandoc appendix.md --filter pandoc-include --filter pandoc-crossref --filter pandoc-latex-admonition --citeproc -o compiled/appendix.pdf;\
+
 
 ## Build pdf from current draft
 pdf:
 	@source "$(CONDA_BASE)/bin/activate" $(CONDA_ENVIRONMENT);\
 	cd paper;\
 	pandoc appendix.md --filter pandoc-include --filter pandoc-crossref --filter pandoc-latex-admonition --citeproc -o compiled/appendix.tex;\
-	pandoc $(SRC) -r markdown+simple_tables+table_captions+yaml_metadata_block+smart -s --pdf-engine=tectonic --template=.pandoc/simple_article.template --filter pandoc-include --filter pandoc-crossref --filter pandoc-latex-admonition --citeproc  --include-after-body compiled/appendix.tex -o compiled/$(PROJECT_NAME).pdf;
+	pandoc $(SRC) -r markdown+simple_tables+table_captions+yaml_metadata_block+smart -s --pdf-engine=tectonic --template=.pandoc/simple_article.template --filter pandoc-include --filter pandoc-crossref --filter pandoc-latex-admonition --citeproc -o compiled/$(PROJECT_NAME).pdf;
 
 ## Remove old versions of compiled draft
 clean:
@@ -132,6 +139,18 @@ submission:
 
 ## Create new submission, diff with prior, & respond to reviewers
 resubmission: submission diff response
+
+
+
+## Build pdf from current draft
+template_pdf:
+	@source "$(CONDA_BASE)/bin/activate" $(CONDA_ENVIRONMENT);\
+	cd paper;\
+	pandoc appendix.md --filter pandoc-include --filter pandoc-crossref --filter pandoc-latex-admonition --citeproc -o compiled/appendix.tex;\
+	pandoc $(SRC) -r markdown+simple_tables+table_captions+yaml_metadata_block+smart -s --pdf-engine=tectonic --filter pandoc-include --filter pandoc-crossref --filter pandoc-latex-admonition --citeproc  --include-after-body compiled/appendix.tex -o compiled/$(PROJECT_NAME).pdf;
+
+
+
 
 #################################################################################
 # Self Documenting Commands                                                     #

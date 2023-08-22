@@ -1,5 +1,5 @@
 ---
-title: Segregated by Design? The Effect of Street Network Topological Structure on the Measurement of Urban Segregation
+title: Segregated by Design? Street Network Topological Structure and the Measurement of Urban Segregation
 author:
 - name: Elijah Knaap
   affiliation: San Diego State University
@@ -13,14 +13,14 @@ abstract: >-
 keywords: "segregation, neighborhoods, spatial analysis, network analysis, spatial weights" 
 bibliography: "paper-seg_networks.bib"
 crossrefYaml: .pandoc/crossref_opts.yaml
-csl: .pandoc/csl/apa-custom.csl
+csl: .pandoc/csl/harvard-custom.csl
 linestretch: 1.4 # for fancy_article use 1.25
 geometry: margin=1in
 fontsize: 10pt # for fancy_article use 11
 # these do not work for fancy_article
 sansitup: True
-#thanks: "This work is supported by NSF-SES Grant 1831615"
-anonymous: True
+thanks: "This work is supported by NSF-SES Grant 1831615"
+anonymous: False
 header-includes:  | #[]  # additional latex pkgs if necessary
   \usepackage{longtable}
   \usepackage{lineno}

@@ -29,7 +29,7 @@ measures under study (cyclomatic complexity, meshedness, and circuity) each belo
 different component, suggesting that our chosen variables each represent a distinct part
 of the network structure.
 
-@fig:correlations in the supplementary material portrays the pairwise correlations
+Figure S3 in the supplementary material portrays the pairwise correlations
 between the percentage difference in the two segregation measures and different
 properties of the networks in each of the CBSAs. The strongest correlation is between
 the percentage difference and the size of the difference in segregation. This indicates

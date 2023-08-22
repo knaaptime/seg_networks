@@ -1,0 +1,16 @@
+codeBlockCaptions: True
+listings: True
+figPrefix: 
+ - "Figure S"
+ - "Figures S"
+figureTitle: "Supplementary Figure S"
+lstPrefix:
+ - "Listing S"
+ - "Listings S"
+tblPrefix:
+ - "Supplementary Table S"
+tableTitle: "Supplementary Table S"
+eqnPrefix:
+ - "Equation S"
+ - "Equations"
+tableTemplate: "*$$tableTitle$$ $$i$$*$$titleDelim$$ $$t$$"

@@ -1,0 +1,10 @@
+strict digraph "" {
+	graph [rankdir=LR];
+	circuity	[shape=circle];
+	circuity -> distance_delta;
+	meshedness	[shape=circle];
+	meshedness -> distance_delta;
+	cyclomatic	[shape=circle];
+	cyclomatic -> distance_delta;
+	distance_delta -> segregation_delta;
+}

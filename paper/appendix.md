@@ -1,8 +1,17 @@
-\newpage
-# Appendix
+---
+title: Supplementary Material
+bibliography: "paper-seg_networks.bib"
+crossrefYaml: .pandoc/crossref_opts_supp.yaml
+csl: .pandoc/csl/harvard-custom.csl
+linestretch: 1.4 # for fancy_article use 1.25
+geometry: margin=1in
+fontsize: 10pt # for fancy_article use 11
+header-includes:  | #[]  # additional latex pkgs if necessary
+    \usepackage{longtable}
+    \usepackage{lineno}
+---
 
 !include tables/one_pct_pandas.md
-
 
 ![The "Neighborhood Unit" as shown in Perry (1929)](figures/perry_neighborhood_unit.png){#fig:nup width=85%}
 

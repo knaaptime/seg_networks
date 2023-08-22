@@ -12,13 +12,13 @@ analyzing large heterogeneous networks.
 Notably, by varying the $r$ parameter and recalculating the segregation indices
 presented here it is possible to generate a network-based version of the "multiscalar
 segregation profile" introduced by @reardon2008GeographicScale, which would provide
-additional insight into the way that networks may affect multiple scales. In
-@fig:multiscalar, we recreate a graph by @roberto2018SpatialProximity showing the
-network-based multiscalar profile for Pittsburgh, PA using our data and methodology.
-After the critical distance of about one kilometer (which provides travel outside a
-given blockgroup) the difference between network and Euclidean profiles is roughly
-constant. Again, this initial exploration suggests our results are likely robust to
-choice of $r$, but this finding should be subject to further scrutiny.
+additional insight into the way that networks may affect multiple scales. In Figure S4
+in the supplementary material, we recreate a graph by @roberto2018SpatialProximity
+showing the network-based multiscalar profile for Pittsburgh, PA using our data and
+methodology. After the critical distance of about one kilometer (which provides travel
+outside a given blockgroup) the difference between network and Euclidean profiles is
+roughly constant. Again, this initial exploration suggests our results are likely robust
+to choice of $r$, but this finding should be subject to further scrutiny.
 
 There are also other ways researchers could partition or conceptualize the street
 network graph for further study. In this example, we include a simple set of graph-wide

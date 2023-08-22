@@ -10,7 +10,7 @@ considerably lower at $\tau=0.90$. Substantively, this means that an analysis of
 segregated metropolitan regions will result in different conclusions regarding the "most
 segregated" places, depending on which distance measure is employed. A visual comparison
 of the top 15 most segregated metros is provided in @fig:ranks, demonstrating how
-different places exchange ranks, and @fig:scatter in the supplementary material portrays the
+different places exchange ranks, and Figure S3 in the supplementary material portrays the
 relationship between segregation measured using the two different distance metrics for
 the sample CBSAs.
 
@@ -25,9 +25,9 @@ different from a random pooling of the same data). Among the 380 CBSAs in our da
 significant at the $\alpha=0.05$ level, and 14.2% of the CBSAs are significant at the
 $\alpha=0.01$ level. Descriptive statistics of the differences between segregation
 measures in each metro are shown in @tbl:diff_descriptives, and a list of the 54 CBSAs
-significant at the one percent level are listed in @tbl:one_pct_diffs. Among these 54
-CBAS, eight metros are located in California--twice the number of the next-most
-prevalent state (Texas).
+significant at the one percent level are listed in Table S1 in the supplementary
+material. Among these 54 CBAS, eight metros are located in California--twice the number
+of the next-most prevalent state (Texas).
 
 !include tables/difference_descriptives_pandas.md
 

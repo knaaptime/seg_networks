@@ -57,7 +57,7 @@ a resident and (a) her neighbors, and (b) her natural surroundings
 [@howard2001GardenCities;@lecorbusier1986NewArchitecture;@campbell1996ReadingsPlanning]. Combining
 these visions with ideas from @wirth1938UrbanismWay and the famous 'neighborhood unit plan'
 articulated by @perry1929neighborhood, large scale developers like James Rouse developed concepts
-for new towns like Columbia, Maryland that were based largely on the design of insular street
+for New Towns like Columbia, Maryland that were based largely on the design of insular street
 networks [@olsen2003BetterPlaces].
 
 At their best, these designs were intended to foster community for the residents that live within

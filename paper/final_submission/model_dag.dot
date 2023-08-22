@@ -1,0 +1,36 @@
+strict digraph "" {
+	graph [bb="0,0,600.39,144",
+		dpi=120,
+		rankdir=LR,
+		ranksep="1.0 equally"
+	];
+	node [fontname=Impact,
+		label="\N"
+	];
+	circuity	[height=0.5,
+		pos="86.401,126",
+		shape=diamond,
+		width=1.5064];
+	distance_delta	[color=red,
+		height=0.5,
+		pos="312.4,72",
+		shape=ellipse,
+		width=1.8776];
+	circuity -> distance_delta	[pos="e,261.58,84.009 118.55,118.49 152.9,110.21 208.97,96.692 251.82,86.362"];
+	segregation_delta	[color=blue,
+		height=0.5,
+		pos="538.39,72",
+		shape=box,
+		width=1.7222];
+	distance_delta -> segregation_delta	[pos="e,476.02,72 379.99,72 406.98,72 438.2,72 465.69,72"];
+	meshedness	[height=0.5,
+		pos="86.401,72",
+		shape=diamond,
+		width=2.4];
+	meshedness -> distance_delta	[pos="e,244.77,72 172.72,72 193.04,72 214.61,72 234.52,72"];
+	cyclomatic	[height=0.5,
+		pos="86.401,18",
+		shape=diamond,
+		width=2.0426];
+	cyclomatic -> distance_delta	[pos="e,261.76,60.034 124.39,26.917 159.06,35.275 211.47,47.91 252,57.68"];
+}
