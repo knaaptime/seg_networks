@@ -1,6 +1,6 @@
 # Segregated by Design? Street Network Topological Structure & the Measurement of Urban Segregation
 
-code for accompanying paper. Forthcoming in EPB. 
+code for accompanying [paper published in EPB](https://journals.sagepub.com/doi/10.1177/23998083231197956). 
 
 **Note**, I often use
 papers to draft the first version of methods that are eventually implemented in other packages like
